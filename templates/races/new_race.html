@@ -3,13 +3,42 @@
 
 {% block content %}
         <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
+        <form method="POST" class="post-form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.media}}
             {{ form.as_p }}
+            {{ form.non_field_errors }}
 
 
 
             <input id="pac-input" class="controls" type="text" placeholder="Search Box">
             <div id="map-canvas"></div>
+
+            <script>
+
+
+   	    $(document).ready(function(){
+
+             $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 15, // Creates a dropdown of 15 years to control year
+                //Buttons
+                today: 'Avui',
+                clear: 'Esborra',
+                close: 'Guarda',
+                format: 'yyyy-mm-dd',
+                firstDay: 1,
+
+                monthsFull: ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Septembre', 'Octubre', 'Novembre', 'Desembre'],
+                monthsShort: [ 'Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Des' ],
+                weekdaysFull: ['Diumenge', 'Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres', 'Dissabte'],
+                weekdaysLetter:['Dg','Dl', 'Dt','Dc','Dj','Dv','Ds'],
+             });
+        })
+ </script>
+
+
+
             <script>
                 $("form :input").on("keypress", function(e) {
                     return e.keyCode != 13;
@@ -17,6 +46,8 @@
             </script>
              <script>
                 $(document).ready(function(){
+
+                    $('select').material_select();
                     $('.datepicker').pickadate({
                         selectMonths: true, // Creates a dropdown to control month
                         selectYears: 15 // Creates a dropdown of 15 years to control year

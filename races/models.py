@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
@@ -21,3 +22,27 @@ class Race(models.Model):
 
     initial_date = models.DateField(verbose_name="Initial date")
     initial_time = models.TimeField(verbose_name="Initial time")
+
+
+class Participant(models.Model):
+    user = models.OneToOneField(User,related_name="profile")
+    races = models.ManyToManyField(Race, through='RaceParticipant')
+
+
+class RaceParticipant(models.Model):
+    race = models.ForeignKey(Race)
+    participant = models.ForeignKey(Participant)
+
+
+
+class Position(models.Model):
+    instant = models.DateTimeField(auto_now=True)
+    latitude = models.CharField(max_length=100)
+    longitude = models.CharField(max_length=100)
+    height = models.CharField(max_length=100)
+    raceposition = models.ForeignKey(RaceParticipant)
+
+
+
+
+

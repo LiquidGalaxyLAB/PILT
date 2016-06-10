@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>This is a Ground Race!</title>
-</head>
-<body>
-<h1> This is a ground Race!</h1>
-    <a href="{% url 'race.views.new_race' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+ {% extends 'base.html' %}
 
-</body>
-</html>
+
+{% block content %}
+
+<h1> This is a ground Race!</h1>
+
+  <a href="race/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+
+{% endblock %}
