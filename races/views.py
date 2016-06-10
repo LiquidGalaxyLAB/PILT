@@ -13,7 +13,9 @@ def airview(request):
     return render(request,'races/air_race.html', {})
 
 def groundview(request):
-    return render(request,'races/ground_race.html', {})
+    races=Race.objects.all()
+    return render(request,'races/ground_race.html',{'races':races})
+
 
 def detail_race(request,pk):
     race = get_object_or_404(Race, pk=pk)
