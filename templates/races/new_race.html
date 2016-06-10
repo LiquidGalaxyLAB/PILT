@@ -5,6 +5,35 @@
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
+
+
+
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            <div id="map-canvas"></div>
+            <script>
+                $("form :input").on("keypress", function(e) {
+                    return e.keyCode != 13;
+                });
+            </script>
+             <script>
+                $(document).ready(function(){
+                    $('.datepicker').pickadate({
+                        selectMonths: true, // Creates a dropdown to control month
+                        selectYears: 15 // Creates a dropdown of 15 years to control year
+                    });
+                });
+                </script>
+
+            {% include "basics/mapsForm.html" %}
+
+
             <button type="submit" class="save btn btn-default">Save</button>
+
+
         </form>
+
+
+
+
+
 {% endblock %}
