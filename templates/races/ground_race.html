@@ -5,6 +5,11 @@
 
 <h1> This is a ground Race!</h1>
 
+     {% for race in races %}
+        {{ race.name }}
+    {% endfor %}
+
+
   <a href="race/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 
 
