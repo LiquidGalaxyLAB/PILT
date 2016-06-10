@@ -4,10 +4,26 @@
 {% block content %}
 
 <h1> This is a ground Race!</h1>
+        <div class="row">
 
-     {% for race in races %}
-        {{ race.name }}
+    {% for race in races %}
+            <div class="col s6 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://www.esflconferences.org/wp-content/uploads/2015/05/barcelona-1.jpg">
+                        <span class="card-title">aaa{{ race.name }}bbb</span>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ race.latitude }}I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
     {% endfor %}
+        </div>
 
 
   <a href="race/new" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>

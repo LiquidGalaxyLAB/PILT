@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 
 from races.models import Race
 from .forms import RaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
+
 
 
 # Create your views here.
@@ -32,5 +33,9 @@ def new_race(request):
             return redirect('detail_race', pk=race.pk)
     return render(request, 'races/new_race.html', {'form': form})
 
+
+def delete_race(request,id):
+    race=Race.objects.get(pk=id).delete()
+    return HttpResponseRedirect('/races/ground_race')
 
 
