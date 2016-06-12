@@ -34,8 +34,23 @@ def new_race(request):
     return render(request, 'races/new_race.html', {'form': form})
 
 
-def delete_race(request,id):
-    race=Race.objects.get(pk=id).delete()
-    return HttpResponseRedirect('/races/ground_race')
+def delete_race(request,pk):
+    race=Race.objects.get(pk=pk).delete()
+    if race.type == 0:
+        return HttpResponseRedirect('/ground_race')
+    else:
+        return HttpResponseRedirect('/air_race')
 
-
+def edit_race(request,pk):
+    race=Race.objects.get(pk=pk)
+    form = RaceForm(instance=race)
+    if request.method == 'POST':
+        form = RaceForm(request.POST, instance=race)
+        if form.is_valid():
+            drone = form.save(commit=False)
+            drone.save()
+            if race.type == 0:
+                return HttpResponseRedirect('/ground_race')
+            else:
+                return HttpResponseRedirect('/air_race')
+    return render(request, 'races/new_race.html', {'form': form})
