@@ -2,7 +2,7 @@
 
 
 {% block content %}
-        <h1>New post</h1>
+        <h1>New Race</h1>
         <form method="POST" class="post-form" enctype="multipart/form-data">
             {% csrf_token %}
             {{form.media}}
@@ -58,7 +58,7 @@
             {% include "basics/mapsForm.html" %}
 
 
-            <button type="submit" class="save btn btn-default">Save</button>
+            <button type="submit" class="save btn btn-default" style="float:right">Save</button>
 
 
         </form>
