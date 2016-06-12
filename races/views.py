@@ -11,10 +11,13 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 
 def airview(request):
-    return render(request,'races/air_race.html', {})
+    race = Race()
+    races = Race.objects.all().filter(type=1)
+    return render(request,'races/air_race.html', {'races':races})
 
 def groundview(request):
-    races=Race.objects.all()
+    race=Race()
+    races=Race.objects.all().filter(type=0)
     return render(request,'races/ground_race.html',{'races':races})
 
 
