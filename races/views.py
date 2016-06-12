@@ -35,8 +35,10 @@ def new_race(request):
 
 
 def delete_race(request,pk):
-    race=Race.objects.get(pk=pk).delete()
-    if race.type == 0:
+    race=Race.objects.get(pk=pk)
+    url_destination = race.type
+    race.delete()
+    if url_destination == 0:
         return HttpResponseRedirect('/ground_race')
     else:
         return HttpResponseRedirect('/air_race')
