@@ -2,8 +2,11 @@ from __future__ import unicode_literals
 
 from django.contrib.auth.models import User
 from django.db import models
+from django.shortcuts import render
+
 
 # Create your models here.
+from django.http import HttpResponseRedirect
 
 
 class Race(models.Model):
@@ -45,4 +48,9 @@ class Position(models.Model):
 
 
 
+# Delete items
+def deleteRace(request, id):
+    race = Race.objects.get(pk=id)
+    race.delete()
+    return render(request,'races/ground_race.html')
 

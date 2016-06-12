@@ -9,16 +9,21 @@
     {% for race in races %}
             <div class="col s6 m4 l3">
                 <div class="card">
-                    <div class="card-image">
+                    <div class="card-image waves-effect waves-block waves-light">
                         <img src="http://www.esflconferences.org/wp-content/uploads/2015/05/barcelona-1.jpg">
                         <span class="card-title">aaa{{ race.name }}bbb</span>
                     </div>
                     <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+
                         <p>{{ race.latitude }}I am a very simple card. I am good at containing small bits of information.
                         I am convenient because I require little markup to use effectively.</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
+
+                    <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                                <a href="edit_hangar/{{hangar.id}}" class=" square btn-floating btn-large waves-effect waves-light blue-grey darken-4" ><i class="material-icons">mode_edit</i></a>
+                                <a class="btn-floating btn-large waves-effect waves-light blue-grey darken-4 square" onclick="Materialize.toast('<span>Are you sure?</span><a class=&quot;btn-flat yellow-text&quot; href=/race/delete_race/{{pk}}>Delete<a>', 5000)"><i class="material-icons" >delete</i></a>
                     </div>
                 </div>
             </div>

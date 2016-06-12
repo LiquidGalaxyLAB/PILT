@@ -20,7 +20,7 @@ def groundview(request):
 
 def detail_race(request,pk):
     race = get_object_or_404(Race, pk=pk)
-    return render(request, 'races/detail_race.html', {'post': race})
+    return render(request, 'races/detail_race.html', {'race': race})
 
 
 def new_race(request):
