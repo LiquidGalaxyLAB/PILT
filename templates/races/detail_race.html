@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>holaaaaa</h1>
+ {% extends 'base.html' %}
 
-</body>
-</html>
+
+{% block tabs %}
+
+<div class="row" style="width:100%;">
+    <div class="col s12" style="padding:0;">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+      </ul>
+    </div>
+
+{% endblock %}
+{% block content %}
+
+
+<div class="row">
+ <div id="test1" class="col s12">
+        <h1>New post</h1>
+     </div>
+
+    <div id="test2" class="col s12">
+        {{ race.name }}
+        <p>hola</p>
+        {{ race.localization_name }}
+        {{ race.latitude }}
+    </div>
+
+
+</div>
+
+
+
+
+
+{% endblock %}

@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^ground_race/race/(?P<pk>[0-9]+)/$', views.detail_race, name='detail_race'),
     url(r'^air_race/race/(?P<pk>[0-9]+)/$', views.detail_race, name='detail_race'),
 
+    url(r'^race/delete_race/(?P<pk>\w+)/$', views.delete_race),
+
 ]
