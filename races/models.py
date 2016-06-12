@@ -47,10 +47,3 @@ class Position(models.Model):
 
 
 
-
-# Delete items
-def deleteRace(request, id):
-    race = Race.objects.get(pk=id)
-    race.delete()
-    return render(request,'races/ground_race.html')
-
