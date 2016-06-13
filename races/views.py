@@ -1,11 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
+from rest_framework import viewsets, status
+from rest_framework import permissions
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
 from races.models import Race
 from .forms import RaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
+from .serializers import RaceSerializer
 
 
 # Create your views here.
@@ -59,3 +65,9 @@ def edit_race(request,pk):
             else:
                 return HttpResponseRedirect('/air_race')
     return render(request, 'races/new_race.html', {'form': form})
+
+
+#Serializers
+class RaceViewSet(viewsets.ModelViewSet):
+    queryset=Race.objects.all()
+    serializer_class = RaceSerializer
