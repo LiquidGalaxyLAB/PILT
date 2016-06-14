@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from rest_framework import viewsets, status
 from rest_framework import permissions
 from rest_framework.decorators import api_view
+from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from races.models import Race
@@ -71,3 +72,6 @@ def edit_race(request,pk):
 class RaceViewSet(viewsets.ModelViewSet):
     queryset=Race.objects.all()
     serializer_class = RaceSerializer
+
+
+
