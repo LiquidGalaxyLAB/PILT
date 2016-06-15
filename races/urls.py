@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^ground_race/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
     url(r'^air_race/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^api/', include(api.urls)),
+    #url(r'^api/', include(api.urls)),
+     url(r'^', include(router.urls)),
 
 ]
