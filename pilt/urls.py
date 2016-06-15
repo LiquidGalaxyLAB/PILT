@@ -18,10 +18,12 @@ from django.contrib import admin
 from pilt.views import indexview
 from django.conf import settings
 from django.conf.urls.static import static
+from . import views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^ibri/$', views.ibriview, name='ibriview'),
     url(r'', include('races.urls')),
-    url(r'^index', indexview, name='index'),
+    url(r'^$', indexview, name='index'),
     ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

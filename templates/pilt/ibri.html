@@ -1,0 +1,23 @@
+ {% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col l6 m6 s12">
+        <h2>Interactive Beacon Rescue Interface</h2>
+        <p>This project is proposing of a civil security solution using physical web as main technology and drones (UAV) to find missing people.</p>
+        <p>The way to find them is by using multiple unattended aerial vehicles (as known as drone).</p>
+        <p>The main idea from this project is to find a missing person scanning an area with one or more drones who will be receiving the physical web beacon Bluetooth signal to determinate the gps position from it in case of emergency.</p>
+    </div>
+    <div class="col l6 m6 s12">
+        <div class="collection">
+        {% for folder in dirnames %}
+            <a href="#!" class="collection-item">{{ folder }}</a>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
