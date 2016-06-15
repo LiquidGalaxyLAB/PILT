@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework import viewsets, status
 from rest_framework import permissions
@@ -32,7 +33,7 @@ def detail_race(request,pk):
     race = get_object_or_404(Race, pk=pk)
     return render(request, 'races/detail_race.html', {'race': race})
 
-
+@csrf_exempt
 def new_race(request):
     form = RaceForm()
     if request.method == "POST":
