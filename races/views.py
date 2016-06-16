@@ -8,12 +8,12 @@ from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
-from races.models import Race
+from races.models import Race,RaceParticipant
 from .forms import RaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
-from .serializers import RaceSerializer
+from .serializers import RaceSerializer,RaceParticipantSerializer
 
 
 # Create your views here.
@@ -41,8 +41,9 @@ def new_race(request):
         if form.is_valid():
             race = form.save(commit=False)
             race.save()
-            return redirect('detail_race', pk=race.pk)
+            return redirect('races:detail_race', pk=race.pk)
     return render(request, 'races/new_race.html', {'form': form})
+
 
 
 def delete_race(request,pk):
@@ -74,5 +75,8 @@ class RaceViewSet(viewsets.ModelViewSet):
     queryset=Race.objects.all()
     serializer_class = RaceSerializer
 
+class RaceParticipantViewSet(viewsets.ModelViewSet):
+    queryset=RaceParticipant.objects.all()
+    serializer_class = RaceParticipantSerializer
 
 

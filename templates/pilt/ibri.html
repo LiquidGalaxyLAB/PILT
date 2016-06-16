@@ -13,10 +13,22 @@
     <div class="col l6 m6 s12">
         <div class="collection">
         {% for folder in dirnames %}
-            <a href="#!" class="collection-item">{{ folder }}</a>
+            <a href="{% url 'ibrisend' folder %}" class="collection-item waves-effect waves-light">{{ folder }}</a>
         {% endfor %}
         </div>
     </div>
+
+
+<!--     <ul class="collection with-header">
+        <li class="collection-header"><h4>First Names</h4></li>
+     {% for folder in dirnames %}
+        <li class="collection-item"><div>{{ folder }}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        {% endfor %}
+        </li>
+      </ul>
+
+    -->
+
 </div>
 
 
