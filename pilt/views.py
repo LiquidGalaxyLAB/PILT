@@ -1,27 +1,31 @@
+from django.core.urlresolvers import reverse
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from os import listdir
 from os.path import isfile,join
 import os
 
 # Create your views here.
+from liquidgalaxy.lgCommunication import write_ip, write_kml
+from pilt.settings import BASE_DIR
+
 
 def indexview(request):
     return render(request,'pilt/index.html', {})
 
 def ibriview(request):
-    mypath='/Users/marc/Desktop/kml/'
+    mypath=BASE_DIR
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-    print onlyfiles
     folders=[]
     for dirname, dirnames, filenames in os.walk('/Users/marc/Desktop/kml/'):
         # print path to all subdirectories first.
         for subdirname in dirnames:
             folders.append(subdirname)
-            print(os.path.join(dirname, subdirname))
-
-        # print path to all filenames.
-        #for filename in filenames:
-            #print(os.path.join(dirname, filename))
-
     return render(request,'pilt/ibri.html',{'dirnames':folders})
+
+def ibri_send(request,folder):
+    write_ip('192.168.1.1')
+    folderKML = BASE_DIR+'/static/ibri/'+folder
+    write_kml(folderKML)
+    return HttpResponseRedirect(reverse('ibriview'),{})
+

@@ -7,6 +7,7 @@ from .resources import api
 router = routers.DefaultRouter()
 #makes sure that the API endpoints work
 router.register(r'races', views.RaceViewSet,'races')
+router.register(r'racesparticipants',views.RaceParticipantViewSet,'racesparticipants')
 
 urlpatterns = [
     url(r'^air_race/$', views.airview, name='airrace'),
