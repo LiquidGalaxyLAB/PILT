@@ -27,4 +27,4 @@ urlpatterns = [
     url(r'^ibri/send/(?P<folder>\w+)/$', views.ibri_send, name='ibrisend'),
     url(r'', include('races.urls',namespace='races')),
     url(r'^$', indexview, name='index'),
-    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -17,15 +17,14 @@ def ibriview(request):
     mypath=BASE_DIR
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
     folders=[]
-    for dirname, dirnames, filenames in os.walk('/Users/marc/Desktop/kml/'):
+    for dirname, dirnames, filenames in os.walk('/tmp/kml/'):
         # print path to all subdirectories first.
         for subdirname in dirnames:
             folders.append(subdirname)
     return render(request,'pilt/ibri.html',{'dirnames':folders})
 
 def ibri_send(request,folder):
-    write_ip('192.168.1.1')
     folderKML = BASE_DIR+'/static/ibri/'+folder
-    write_kml(folderKML)
+    write_kml(folderKML,folder)
     return HttpResponseRedirect(reverse('ibriview'),{})
 

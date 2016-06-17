@@ -19,31 +19,32 @@ def get_ip():
     f.close()
     return ip_galaxy
 
-def write_kml(kmlFolder):
+def write_kml(kmlFolder,folder):
     ip_server = get_server_ip()
-    os.system("touch /tmp/kmls.txt")
-    os.system("rm /tmp/kmls.txt")
-    os.system("touch /tmp/kmls.txt")
-    file = open("/tmp/kmls.txt", 'w')
+    os.system("touch kmls.txt")
+    os.system("rm kmls.txt")
+    os.system("touch kmls.txt")
+    file = open("kmls.txt", 'w')
     onlyfiles = [f for f in os.listdir(kmlFolder) if isfile(join(kmlFolder, f))]
     for kmlFile in onlyfiles:
-        file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/ibri/" + kmlFile + "\n")
+        file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/ibri/"+ folder +"/"+ kmlFile + "\n")
+    file.close()
     send_kml_to_galaxy()
 
 
 def send_kml_to_galaxy():
-    file_path = "/tmp/kmls.txt"
-    file_path_slave = "/tmp/kmls_slave.txt"
+    file_path = "kmls.txt"
     server_path = "/var/www/html"
     print("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
     os.system("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
+    #os.system("sshpass -p 'lqgalaxy' scp -vvv kmls.txt lg@10.160.101.85:/var/www/html")
 
 
 
 
 def get_server_ip():
     p = subprocess.Popen(
-        "ifconfig eth0 | grep 'inet:' | cut -d: -f2 | awk '{print $1}'",
+        "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
         shell=True,
         stdout=subprocess.PIPE)
     ip_server = p.communicate()[0]
