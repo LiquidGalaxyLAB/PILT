@@ -1,0 +1,2 @@
+http://10.160.100.46:8000/static/ibri/IBRI307/IBRI307R665.kml
+http://10.160.100.46:8000/static/ibri/IBRI307/IBRI307R666.kml
