@@ -73,19 +73,30 @@ def edit_race(request,pk):
 @csrf_exempt
 def create_participant(request):
     print("---------")
-    name=request.GET.get('name','')
+    #name=request.GET.get('name','')
 
-    user = User()
-    user.username= name
-    user.first_name = name
-    user.password = ''
-    user.save()
-    participant = Participant()
-    participant.user = user
-    participant.save()
-
+    if request.method == 'POST':
+        print("fhgjhk")
+        name=request.POST.get('name','')
+        image=request.POST.get('image','')
+        user = User()
+        user.username= name
+        user.first_name = name
+        user.password = ''
+        user.save()
+        participant = Participant()
+        participant.user = user
+        participant.image = image
+        participant.save()
 
     return HttpResponseRedirect('/')
+
+
+def create_raceparticipant(request,participant,race):
+    if request.method == 'POST':
+        participant=request.POST.get('')
+        participant = Participant()
+
 
 
 #Serializers
