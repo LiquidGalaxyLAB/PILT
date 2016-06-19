@@ -70,7 +70,7 @@ def edit_race(request,pk):
                 return HttpResponseRedirect('/air_race')
     return render(request, 'races/new_race.html', {'form': form})
 
-
+@csrf_exempt
 def create_participant(request):
     print("---------")
     name=request.GET.get('name','')
