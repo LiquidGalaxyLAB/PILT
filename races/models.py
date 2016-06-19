@@ -30,6 +30,8 @@ class Race(models.Model):
 class Participant(models.Model):
     user = models.OneToOneField(User,related_name="profile")
     races = models.ManyToManyField(Race, through='RaceParticipant')
+    image = models.CharField(max_length=200,null=True, blank=True)
+
 
 
 class RaceParticipant(models.Model):
