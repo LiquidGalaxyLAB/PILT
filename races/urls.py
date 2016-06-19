@@ -6,8 +6,9 @@ from .resources import api
 
 router = routers.DefaultRouter()
 #makes sure that the API endpoints work
-router.register(r'races', views.RaceViewSet,'races')
-router.register(r'racesparticipants',views.RaceParticipantViewSet,'racesparticipants')
+router.register(r'/races', views.RaceViewSet,'races')
+router.register(r'/racesparticipants',views.RaceParticipantViewSet,'racesparticipants')
+router.register(r'/particpants',views.ParticipantViewSet,'participants')
 
 urlpatterns = [
     url(r'^air_race/$', views.airview, name='airrace'),
@@ -20,6 +21,7 @@ urlpatterns = [
     url(r'^air_race/race/edit_race/(?P<pk>\w+)/$', views.edit_race),
     url(r'^ground_races/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
     url(r'^air_race/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
+    url(r'^create_participant/$',views.create_participant),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/', include(api.urls)),
     url(r'^api2', include(router.urls)),

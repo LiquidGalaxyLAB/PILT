@@ -1,19 +1,20 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, serializers
 from rest_framework import permissions
 from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
-from races.models import Race,RaceParticipant
+from races.models import Race,RaceParticipant, Participant
 from .forms import RaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
-from .serializers import RaceSerializer,RaceParticipantSerializer
+from .serializers import RaceSerializer,RaceParticipantSerializer, UserSerializer
 
 
 # Create your views here.
@@ -70,6 +71,23 @@ def edit_race(request,pk):
     return render(request, 'races/new_race.html', {'form': form})
 
 
+def create_participant(request):
+    print("---------")
+    name=request.GET.get('name','')
+
+    user = User()
+    user.username= name
+    user.first_name = name
+    user.password = ''
+    user.save()
+    participant = Participant()
+    participant.user = user
+    participant.save()
+
+
+    return HttpResponseRedirect('/')
+
+
 #Serializers
 class RaceViewSet(viewsets.ModelViewSet):
     queryset=Race.objects.all()
@@ -78,5 +96,11 @@ class RaceViewSet(viewsets.ModelViewSet):
 class RaceParticipantViewSet(viewsets.ModelViewSet):
     queryset=RaceParticipant.objects.all()
     serializer_class = RaceParticipantSerializer
+    print("hola")
+
+class ParticipantViewSet(viewsets.ModelViewSet):
+    queryset = Participant.objects.all()
+    serializer_class = RaceParticipantSerializer
+
 
 
