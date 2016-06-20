@@ -22,6 +22,8 @@ urlpatterns = [
     url(r'^ground_races/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
     url(r'^air_race/race/delete_race/(?P<pk>\w+)/$', views.delete_race),
     url(r'^create_participant/$',views.create_participant),
+    url(r'^create_raceposition/$', views.create_raceposition),
+    url(r'^ground_races/race/$/send/(?P<participant>\w+)/$', views.ground_race_send, name='ground_race_send'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/', include(api.urls)),
     url(r'^api2', include(router.urls)),

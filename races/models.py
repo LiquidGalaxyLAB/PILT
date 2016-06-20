@@ -32,20 +32,15 @@ class Participant(models.Model):
     races = models.ManyToManyField(Race, through='RaceParticipant')
     image = models.CharField(max_length=200,null=True, blank=True)
 
-
-
 class RaceParticipant(models.Model):
     race = models.ForeignKey(Race)
     participant = models.ForeignKey(Participant)
 
-
-
 class Position(models.Model):
-    instant = models.DateTimeField(auto_now=True)
+    instant = models.IntegerField(default=0)
     latitude = models.CharField(max_length=100)
     longitude = models.CharField(max_length=100)
     height = models.CharField(max_length=100)
-    raceposition = models.ForeignKey(RaceParticipant)
-
+    raceparticipant = models.ManyToManyField(RaceParticipant)
 
 
