@@ -17,11 +17,22 @@
 
 <div class="row">
  <div id="test1" class="col s12">
-        <h1>{{ race.name }}</h1>
+        <h1>{{ race.pk }}</h1>
 
      </div>
 
     <div id="test2" class="col s12">
+
+        <ul class="collection">
+            {% for participant in participants %}
+                <li class="collection-item avatar">
+                <img src="{{ participant.image }}" alt="" class="circle">
+                <span class="title">{{ participant.user.username }}</span>
+                </p>
+                <a href="{{ view.get_raceparticipant race participant }}" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            {% endfor %}
+        </ul>
         {{ race.name }}
         <p>hola</p>
         {{ race.localization_name }}
