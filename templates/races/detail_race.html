@@ -29,7 +29,8 @@
                 <img src="{{ participant.image }}" alt="" class="circle">
                 <span class="title">{{ participant.user.username }}</span>
                 </p>
-                <a href="{{ view.get_raceparticipant race participant }}" class="secondary-content"><i class="material-icons">grade</i></a>
+                <a href="{% url 'races:ground_race_send' race.pk participant.pk %}" class="secondary-content"><i class="material-icons">grade</i></a>
+
                 </li>
             {% endfor %}
         </ul>

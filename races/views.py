@@ -116,7 +116,9 @@ def create_raceparticipant(participant,race):
     raceParticipant.save()
 
 def get_raceparticipant(participant,race):
+    print("hola")
     raceParticipant= RaceParticipant.objects.get(participant=participant,race=race)
+    print("hola")
     return raceParticipant
 
 @csrf_exempt
@@ -168,7 +170,7 @@ def get_raceposition(participant,race):
 
 
 
-def ground_race_send(request,participant,pk):
+def ground_race_send(request,race, participant):
     print("hola")
     return participant
 
