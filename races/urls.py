@@ -11,7 +11,7 @@ router.register(r'/racesparticipants',views.RaceParticipantViewSet,'racespartici
 router.register(r'/particpants',views.ParticipantViewSet,'participants')
 
 urlpatterns = [
-    url(r'^air_race/$', views.airview, name='airrace'),
+    url(r'^air_races/$', views.airview, name='airrace'),
     url(r'^ground_races/$', views.groundview, name='groundrace'),
     url(r'^ground_races/race/new/$',views.new_race, name='new_race'),
     url(r'^air_races/race/new/$', views.new_race, name='new_race'),
