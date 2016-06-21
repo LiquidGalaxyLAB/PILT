@@ -35,12 +35,14 @@ class Participant(models.Model):
 class RaceParticipant(models.Model):
     race = models.ForeignKey(Race)
     participant = models.ForeignKey(Participant)
+    def __unicode__(self):
+        return str(self.pk)
 
 class Position(models.Model):
     instant = models.IntegerField(default=0)
     latitude = models.CharField(max_length=100)
     longitude = models.CharField(max_length=100)
     height = models.CharField(max_length=100)
-    raceparticipant = models.ManyToManyField(RaceParticipant)
+    raceparticipant = models.ForeignKey(RaceParticipant)
 
 

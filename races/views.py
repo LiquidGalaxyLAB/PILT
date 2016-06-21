@@ -10,6 +10,7 @@ from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
+from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml
 from races.models import Race,RaceParticipant, Participant, Position
 from .forms import RaceForm
 from django.shortcuts import redirect
@@ -148,31 +149,25 @@ def create_raceposition(request):
         position.latitude = request.POST.get('latitude','')
         position.longitude = request.POST.get('longitude','')
         position.height = request.POST.get('height', '')
-        position.raceposition=raceparticipant
+        position.raceparticipant=raceparticipant
         position.save()
-        get_raceposition(participant,race)
+        get_raceparticipant(participant,race)
     return HttpResponseRedirect('/')
 
 
 
-def get_raceposition(participant,race):
-    print("1")
-    raceparticipant = get_raceparticipant(participant, race)
-    print("2")
-    print raceparticipant.pk
-    positions = Position.objects.all()
-    print("3")
-    for position in positions:
-        print position.pk
-        print position.instant
-
+def get_racepositions(raceparticipant):
+    positions = Position.objects.filter(raceparticipant=raceparticipant)
     return positions
 
-
-
 def ground_race_send(request,race, participant):
-    print("hola")
-    return participant
+    raceparticipant = get_raceparticipant(participant,race)
+    positions = get_racepositions(raceparticipant)
+    print(raceparticipant.participant.user.username)
+    create_routeparticipant_kml(positions,raceparticipant)
+    return HttpResponseRedirect('/ground_races')
+
+
 
 
 #Serializers

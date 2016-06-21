@@ -33,7 +33,7 @@ def write_kml(kmlFolder,folder):
 
 
 def send_kml_to_galaxy():
-    file_path = "kmls.txt"
+    file_path = "static/kml/kmls.txt"
     server_path = "/var/www/html"
     print("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
     os.system("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
