@@ -1,3 +1,3 @@
-http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R667.kml
-http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R669.kml
-http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R668.kml
+http://10.160.100.71:8000/static/kml/MarcCapdevila.kml
+http://10.160.100.71:8000/static/kml/MarcCapdevila.kml
+
