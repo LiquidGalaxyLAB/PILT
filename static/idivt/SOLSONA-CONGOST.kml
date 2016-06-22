@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<StyleMap id="linea_11023171042324260">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#linea_1102317104232460</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#linea_11023171042324211</styleUrl>
+		</Pair>
+	</StyleMap>			
+	<Folder>
+		<name>SOLSONA - CONGOST 110KV</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247401210737</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.484622583297286</longitude>
+				<latitude>41.99623235468189</latitude>
+				<altitude>0</altitude>
+				<heading>0.06392143818536129</heading>
+				<tilt>0</tilt>
+				<range>122.3189143207699</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin6100</styleUrl>
+			<Point>
+				<coordinates>1.484326028995159,41.99647563154925,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000740</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.487500862751766,41.9949684245875,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000750</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.49046,41.99358,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000760</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.49207,41.99284,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000770</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.496629797672385,41.99080134480485,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000780</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.498862514862206,41.98980384446545,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000790</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.50153,41.98865,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000800</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.504705158642879,41.98724124964605,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000810</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.50666,41.98637,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000820</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.509377282860314,41.98515850894453,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000830</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.511108750086195,41.98441544180032,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000840</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.51312,41.98349,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000850</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.515463575367263,41.98246343008548,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000860</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.518159069003206,41.9812643890357,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000870</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.521318006295267,41.97985510250111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000880</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.523891367919277,41.97870839037853,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000890</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.526452156538498,41.9775794713867,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000900</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00720</styleUrl>
+			<Point>
+				<coordinates>1.52950027227258,41.97624959227068,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000910</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.53154912644947,41.97533015203581,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000920</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.535927059975336,41.97336864603081,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000930</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.53816,41.97242,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000940</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.540926228923266,41.97114467815411,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000950</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.54308,41.97024,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000960</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.54491,41.96943,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000970</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.546948743686992,41.96848312945195,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000980</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.54914,41.96755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400000990</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.55126,41.96661,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001000</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.55445,41.96519,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001010</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.556274582836837,41.96434077338818,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001020</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.55996,41.96275,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001030</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.561991000341058,41.96181868063505,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001040</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.565329905583038,41.95929362941738,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001050</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.567429230235615,41.9576896847538,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001060</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.568742132788356,41.95671535484172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001070</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.571478390743212,41.95467795935141,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001080</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.57345,41.95318,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001090</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.57587,41.95134,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001100</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.577442862186801,41.95015874431162,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001110</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.578104194956769,41.94971661561299,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001120</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.583391040602108,41.9457921220147,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001130</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.584846876812811,41.94433301953084,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001140</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.58676,41.94236,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001150</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.58826,41.94092,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001160</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.590852626359236,41.93839958741925,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001170</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.591986858023386,41.93728769579936,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001180</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.59314,41.93623,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001190</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.595463445211358,41.93387179752071,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001200</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.596399842427205,41.93297359587986,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001210</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.597731743633641,41.9316389004903,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001220</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.600060171865129,41.92940669059498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001230</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.60198,41.92758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001240</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.60351,41.92608,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001250</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.60542,41.92421,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001260</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.60652,41.92314,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001270</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.61078,41.91896,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001280</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.6121,41.91767,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001290</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.61307,41.91673,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001300</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.615621184342046,41.91423930445037,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001310</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.618392802938346,41.91152570354794,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001320</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.62124,41.90873,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001330</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.62248,41.9075,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001340</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.62354,41.90647,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001350</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.62728,41.9028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001360</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.62997,41.90018,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001370</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.632543904389364,41.89761790772504,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001380</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.633651618762484,41.89655030947549,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001390</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.63627,41.89399,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001400</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.63769,41.89262,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001410</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.639326971303572,41.89098861044797,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001420</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.640212771768077,41.89014348105206,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001430</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.643524693428792,41.88685923340947,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001440</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.6453,41.88516,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001450</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.647547294793091,41.88300683972054,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001460</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.648718165213492,41.88177771750046,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001470</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.65065,41.87991,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001480</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.652840113217539,41.87775517722071,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001490</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.654955674674205,41.8757174696742,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001500</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.656322993563306,41.87430143015452,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001510</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.65763,41.87307,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001520</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.658980271676465,41.87170256881201,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001530</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.661871105097112,41.86887219448575,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001540</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.66257,41.86822,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001550</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.663999067508075,41.86678942706237,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001560</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.665302954052031,41.86550763844432,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001570</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.666766939434121,41.86405656791003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001580</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.66823,41.86266,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001590</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.669804798119914,41.86107458262814,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247401221607</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.671124307096352</longitude>
+				<latitude>41.85989490043689</latitude>
+				<altitude>0</altitude>
+				<heading>0.01657500866469811</heading>
+				<tilt>4.218342773018923</tilt>
+				<range>163.0317083861283</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.671231512126697,41.85966805484927,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001610</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.672510273285819,41.85842191776529,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247401231627</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.674637911978862,41.85632093051663,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001630</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.67699,41.85397,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001640</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.679175517047185,41.85184287627883,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001650</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.68076,41.85028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001660</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.68533,41.8455,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001670</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.68905,41.84155,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001680</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.69055,41.83999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001690</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.69156,41.83894,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001700</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.692467651931065,41.83799865621998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001710</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.69434,41.83605,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001720</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.696923354214304,41.83327576700405,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001730</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.6989,41.83125,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001740</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.69995,41.83015,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001750</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.70462,41.82517,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001760</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.70592,41.82381,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001770</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.70691,41.82279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001780</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.7084,41.82122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001790</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.70889,41.82074,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001800</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.70986,41.8198,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001810</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.712490979946306,41.81724831778675,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001820</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.71461,41.81531,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001830</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.71536,41.81459,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001840</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.71682,41.81321,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001850</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.71881,41.81135,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001860</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.72097,41.80926,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001870</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.72245499640618,41.80781247040414,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001880</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.72343,41.8069,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001890</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.72569,41.80475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001900</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.729521300061542,41.80111779374123,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001910</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73037,41.80032,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001920</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73173,41.79902,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001930</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73334,41.79746,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001940</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73451,41.79635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001950</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.7357,41.79522,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001960</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73679,41.79418,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001970</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.73964,41.79145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001980</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.74186,41.78935,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400001990</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.74312,41.78817,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002000</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.74505,41.78634,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002010</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.74739,41.78413,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002020</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.74883,41.78276,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002030</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.75218,41.77956,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002040</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.75474,41.7771,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002050</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.7569,41.77503,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002060</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.75918,41.77286,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002070</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76047,41.77161,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002080</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76203,41.77014,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002090</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76399,41.76827,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002100</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76533,41.76699,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002110</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76725,41.76517,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002120</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.76959,41.76291,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002130</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.77167,41.76093,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002140</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.77288,41.75977,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002160</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.77703,41.75594,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002170</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.77936,41.75378,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002180</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.78226,41.7511,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002190</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.78399,41.7495,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002200</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.78551,41.74807,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002210</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>1.78711,41.74658,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002220</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.789045508379144,41.74476577124977,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002230</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.787920766295825</longitude>
+				<latitude>41.74228305762261</latitude>
+				<altitude>0</altitude>
+				<heading>-0.02099502995341858</heading>
+				<tilt>13.09376903190493</tilt>
+				<range>319.1524898933314</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.78748053875801,41.7422903982491,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002240</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.787875703868316</longitude>
+				<latitude>41.74064657684914</latitude>
+				<altitude>0</altitude>
+				<heading>-0.02102504214694868</heading>
+				<tilt>13.09379114270955</tilt>
+				<range>330.0185517016613</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.786966765652358,41.74083487332053,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247402182257</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.788786563776914</longitude>
+				<latitude>41.73751075879928</latitude>
+				<altitude>0</altitude>
+				<heading>0.04390128417673582</heading>
+				<tilt>0</tilt>
+				<range>184.9765766404716</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default2160</styleUrl>
+			<Point>
+				<coordinates>1.788649835229675,41.7376642081019,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247402302259</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.794082183436239</longitude>
+				<latitude>41.73646721733121</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01689221903694317</heading>
+				<tilt>13.09063095411559</tilt>
+				<range>654.7131556542481</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.792126866772819,41.73628674024584,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002260</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.794495914352724,41.73563610818545,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002270</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.79787288146728,41.73251909173389,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002280</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.799768053860986,41.72953962029104,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002290</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.802174180427547,41.72881716063655,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247400002300</name>
+			<visibility>0</visibility>
+			<styleUrl>#default00620</styleUrl>
+			<Point>
+				<coordinates>1.805693363796192,41.72771893033929,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247402102338</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin22</styleUrl>
+			<Point>
+				<coordinates>1.808780929900507,41.72785005892061,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SOLSONA - CONGOST 110KV 247401242317</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>1.808333947951266</longitude>
+				<latitude>41.72806151281578</latitude>
+				<altitude>0</altitude>
+				<heading>0.1080953055142273</heading>
+				<tilt>25.34661939625784</tilt>
+				<range>181.7871547174663</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin22</styleUrl>
+			<Point>
+				<coordinates>1.808164362076399,41.72803280903158,0</coordinates>
+			</Point>
+		</Placemark>
+<Placemark>
+					<name>CARDONA_CONGOST</name>
+					<visibility>0</visibility>
+					<Snippet maxLines="0"></Snippet>
+					<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format"> <body><table border="1" width="300" cellpadding="5" cellspacing="0"><tr bgcolor="#d87d34"><th width="50" align="left">Campo</th><th width="50" align="left">Valor</th></tr><tr><td>Circuito</td><td>CARDONA_CONGOST</td></tr><tr bgcolor="#ebbc96"><td>Tensión AISLAMIENTO (kV)</td><td>110</td></tr><tr><td>Tramo</td><td>CARDONA|E2.CARDONA</td></tr><tr bgcolor="#ebbc96"><td>Mantenimiento</td><td>No informado</td></tr><tr><td>Tipo</td><td>AEREO</td></tr><tr bgcolor="#ebbc96"><td>Conductor</td><td>LA-280 (HAWK)</td></tr><tr><td>I Máxima Conductor (A)</td><td>572</td></tr><tr bgcolor="#ebbc96"><td>I. Máxima Real Tramo (A)</td><td></td></tr><tr><td>P. Máx. Admisible tramo (MVA)</td><td>109</td></tr><tr bgcolor="#ebbc96"><td>Longitud Tramo (Km)</td><td>1,525</td></tr>]]></description>
+					<styleUrl>#linea_11023171042324282613410011</styleUrl>
+					<LineString>
+						<coordinates>
+							1.808749164739938,41.72790146673278,0 1.808153179619882,41.72804359939241,0 1.8057404,41.72775,0 1.8022304,41.728848,0 1.799813049334433,41.72956065010123,0 1.7979502,41.732544,0 1.7945984,41.73564,0 
+						</coordinates>
+						<Tesellate>1</Tesellate>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>CARDONA_CONGOST</name>
+					<visibility>0</visibility>
+					<Snippet maxLines="0"></Snippet>
+					<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format"> <body><table border="1" width="300" cellpadding="5" cellspacing="0"><tr bgcolor="#d87d34"><th width="50" align="left">Campo</th><th width="50" align="left">Valor</th></tr><tr><td>Circuito</td><td>CARDONA_CONGOST</td></tr><tr bgcolor="#ebbc96"><td>Tensión AISLAMIENTO (kV)</td><td>110</td></tr><tr><td>Tramo</td><td>CONGOST|E1.CARDONA</td></tr><tr bgcolor="#ebbc96"><td>Mantenimiento</td><td>No informado</td></tr><tr><td>Tipo</td><td>AEREO</td></tr><tr bgcolor="#ebbc96"><td>Conductor</td><td>ZIGOLO</td></tr><tr><td>I Máxima Conductor (A)</td><td>472</td></tr><tr bgcolor="#ebbc96"><td>I. Máxima Real Tramo (A)</td><td></td></tr><tr><td>P. Máx. Admisible tramo (MVA)</td><td>95</td></tr><tr bgcolor="#ebbc96"><td>Longitud Tramo (Km)</td><td>19,36</td></tr>]]></description>
+					<styleUrl>#linea_1102317104232428261160</styleUrl>
+					<LineString>
+						<coordinates>
+							1.7123559,41.873904,0 1.7121457,41.873623,0 1.709107054077987,41.8713005360746,0 1.7055374,41.87143,0 1.7024533,41.871468,0 1.698056921710918,41.87156668454287,0 1.696128629682465,41.87157671757518,0 1.693308360116601,41.87021781259919,0 1.687803048841765,41.86760518596448,0 1.6852099,41.866282,0 1.6809733,41.86427,0 1.678527344507963,41.86315569426214,0 1.6712808,41.859675,0 1.6725956,41.858377,0 1.6748199,41.856183,0 1.6770472,41.853996,0 1.6791734,41.851915,0 1.6808227,41.85031,0 1.6853872,41.845523,0 1.6891027,41.84158,0 1.6906032,41.840019,0 1.6916082,41.83897,0 1.692759,41.837769,0 1.6943882,41.836081,0 1.6970594,41.833303,0 1.6989589,41.831278,0 1.6999984,41.830171,0 1.7046807,41.8252,0 1.7059762,41.823836,0 1.7069621,41.822827,0 1.7084588,41.821245,0 1.7089413,41.820762,0 1.7099143,41.819833,0 1.7126116,41.817281,0 1.7146637,41.815337,0 1.7154164,41.814627,0 1.716874,41.813248,0 1.718861,41.811371,0 1.7210235,41.80929,0 1.722485,41.807895,0 1.723496,41.806922,0 1.7257418,41.804775,0 1.7295629,41.801163,0 1.7304262,41.800356,0 1.7317746,41.79905,0 1.7333905,41.7975,0 1.7345624,41.796386,0 1.7357493,41.795257,0 1.7368524,41.794212,0 1.7396974,41.791473,0 1.7419075,41.789383,0 1.7431854,41.788201,0 1.7451045,41.786368,0 1.7474376,41.784151,0 1.7488898,41.782791,0 1.7522344,41.779586,0 1.7547934,41.777131,0 1.7569635,41.775057,0 1.7592334,41.772884,0 1.7605268,41.771648,0 1.7620814,41.770176,0 1.7640454,41.768293,0 1.7653926,41.767026,0 1.7673017,41.765202,0 1.7696473,41.762938,0 1.7717228,41.760957,0 1.7729281,41.759805,0 1.7770906,41.755968,0 1.7794113,41.753812,0 1.7823124,41.751134,0 1.7840497,41.749535,0 1.7855831,41.748107,0 1.7871695,41.746615,0 1.7891607,41.744757,0 
+						</coordinates>
+						<Tesellate>1</Tesellate>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>CARDONA_CONGOST</name>
+					<visibility>0</visibility>
+					<Snippet maxLines="0"></Snippet>
+					<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format"> <body><table border="1" width="300" cellpadding="5" cellspacing="0"><tr bgcolor="#d87d34"><th width="50" align="left">Campo</th><th width="50" align="left">Valor</th></tr><tr><td>Circuito</td><td>CARDONA_CONGOST</td></tr><tr bgcolor="#ebbc96"><td>Tensión AISLAMIENTO (kV)</td><td>110</td></tr><tr><td>Tramo</td><td>E1.CARDONA|E2.CARDONA</td></tr><tr bgcolor="#ebbc96"><td>Mantenimiento</td><td>No informado</td></tr><tr><td>Tipo</td><td>AEREO</td></tr><tr bgcolor="#ebbc96"><td>Conductor</td><td>LA-455 (CONDOR)</td></tr><tr><td>I Máxima Conductor (A)</td><td>800</td></tr><tr bgcolor="#ebbc96"><td>I. Máxima Real Tramo (A)</td><td></td></tr><tr><td>P. Máx. Admisible tramo (MVA)</td><td>90</td></tr><tr bgcolor="#ebbc96"><td>Longitud Tramo (Km)</td><td>1,389</td></tr>]]></description>
+					<styleUrl>#linea_11023171042324310</styleUrl>
+					<LineString>
+						<coordinates>
+							1.7891607,41.744757,0 1.7876097,41.742292,0 1.7870354,41.740826,0 1.788667450743278,41.73771787204829,0 1.7921945,41.736327,0 1.7945984,41.73564,0 
+						</coordinates>
+						<Tesellate>1</Tesellate>
+					</LineString>
+				</Placemark>
+<Placemark>
+					<name>CARDONA_SOLSONA</name>
+					<visibility>0</visibility>
+					<Snippet maxLines="0"></Snippet>
+					<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format"> <body><table border="1" width="300" cellpadding="5" cellspacing="0"><tr bgcolor="#d87d34"><th width="50" align="left">Campo</th><th width="50" align="left">Valor</th></tr><tr><td>Circuito</td><td>CARDONA_SOLSONA</td></tr><tr bgcolor="#ebbc96"><td>Tensión AISLAMIENTO (kV)</td><td>110</td></tr><tr><td>Tramo</td><td>CARDONA|SOLSONA</td></tr><tr bgcolor="#ebbc96"><td>Mantenimiento</td><td>No informado</td></tr><tr><td>Tipo</td><td>AEREO</td></tr><tr bgcolor="#ebbc96"><td>Conductor</td><td>PIPER</td></tr><tr><td>I Máxima Conductor (A)</td><td>499</td></tr><tr bgcolor="#ebbc96"><td>I. Máxima Real Tramo (A)</td><td></td></tr><tr><td>P. Máx. Admisible tramo (MVA)</td><td>90</td></tr><tr bgcolor="#ebbc96"><td>Longitud Tramo (Km)</td><td>26</td></tr>]]></description>
+					<styleUrl>#linea_11023171042324260</styleUrl>
+					<LineString>
+						<coordinates>
+							1.484380558849803,41.99580327445469,0 1.484379327423022,41.99647521841666,0 1.487513,41.994995,0 1.4904963,41.993618,0 1.4920977,41.992881,0 1.4967036,41.990906,0 1.4989484,41.989881,0 1.5015716,41.988687,0 1.5046997,41.987292,0 1.5066957,41.986404,0 1.5094671,41.98518,0 1.5111713,41.98441,0 1.5131615,41.983529,0 1.5154129,41.982532,0 1.5182582,41.981258,0 1.5213239,41.979917,0 1.5239701,41.978779,0 1.5264817,41.977656,0 1.5296892,41.976238,0 1.5315489,41.975412,0 1.5359985,41.973437,0 1.5381959,41.972462,0 1.5410132,41.971214,0 1.5431292,41.970273,0 1.54495,41.969463,0 1.547081,41.968521,0 1.549176,41.967587,0 1.5513021,41.966642,0 1.554492,41.965225,0 1.5563849,41.964384,0 1.5599979,41.962779,0 1.561985,41.961895,0 1.5655183,41.959243,0 1.5674119,41.957737,0 1.5688063,41.956783,0 1.5715022,41.954729,0 1.5734994,41.953205,0 1.5759211,41.951364,0 1.5774379,41.950168,0 1.5782084,41.949581,0 1.5832998,41.945737,0 1.5847886,41.944326,0 1.5868178,41.942388,0 1.5883157,41.940956,0 1.5909911,41.938402,0 1.5920802,41.937339,0 1.5931952,41.936256,0 1.5955027,41.933986,0 1.5964816,41.933044,0 1.5977975,41.931753,0 1.6000854,41.92951,0 1.6020269,41.927614,0 1.6035659,41.926107,0 1.6054813,41.924232,0 1.6065656,41.923171,0 1.610832,41.918992,0 1.6121503,41.917699,0 1.6131251,41.916749,0 1.6157334,41.914197,0 1.618486,41.911502,0 1.6212851,41.908757,0 1.6225362,41.907535,0 1.623591,41.9065,0 1.6273293,41.902836,0 1.6300194,41.900208,0 1.632583,41.897699,0 1.633678,41.896627,0 1.6363296,41.894026,0 1.6377355,41.892647,0 1.6393,41.891114,0 1.6401207,41.890304,0 1.6434871,41.887003,0 1.6453503,41.885184,0 1.6475735,41.883003,0 1.6487367,41.881867,0 1.6507017,41.879939,0 1.652795,41.877878,0 1.6548988,41.875825,0 1.6564469,41.874307,0 1.657689,41.873092,0 1.6591105,41.871688,0 1.6619907,41.868871,0 1.6626311,41.868245,0 1.6641603,41.866745,0 1.6654331,41.865499,0 1.666923,41.864034,0 1.6682783,41.862687,0 1.6698825,41.86108,0 1.6712315,41.859723,0 1.6731586,41.860643,0 1.678469530410534,41.86321584617568,0 1.6809206,41.86432,0 1.6851687,41.866334,0 1.687725838427003,41.86765022618398,0 1.693231135560391,41.87030176127652,0 1.696109813072795,41.87164232739851,0 1.6982927,41.871611,0 1.7024559,41.871527,0 1.7055371,41.871493,0 1.709078071526968,41.87134112949327,0 1.7120684,41.873654,0 1.7122855,41.873938,0 
+						</coordinates>
+						<Tesellate>1</Tesellate>
+					</LineString>
+				</Placemark>
+	</Folder>
+</Document>
+</kml>
