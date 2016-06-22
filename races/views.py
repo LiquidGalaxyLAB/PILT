@@ -11,6 +11,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml
+from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race
 from races.models import Race,RaceParticipant, Participant, Position
 from .forms import RaceForm
 from django.shortcuts import redirect
@@ -164,7 +165,9 @@ def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
     print(raceparticipant.participant.user.username)
-    create_routeparticipant_kml(positions,raceparticipant)
+    filename=create_routeparticipant_kml(positions,raceparticipant)
+    write_kml_race()
+    send_kml_to_galaxy()
     return HttpResponseRedirect('/ground_races')
 
 

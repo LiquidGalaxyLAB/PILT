@@ -2,7 +2,7 @@ from races.models import Participant, RaceParticipant,Position
 
 
 def create_routeparticipant_kml(positions,raceparticipant):
-    filename = "liquidgalaxy/kml/" + raceparticipant.participant.user.username + ".kml"
+    filename = "static/kml/" + raceparticipant.participant.user.username + ".kml"
     auxImagePath = raceparticipant.participant.image.split("&")
     imagePath = auxImagePath[0] + "&amp;" + auxImagePath[1]
 
@@ -50,7 +50,7 @@ def create_routeparticipant_kml(positions,raceparticipant):
             "\t</Document>\n" +
             "</kml>")
         kml_file.close()
-        print("hola")
+        return filename
 
 
 
