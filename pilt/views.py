@@ -17,7 +17,8 @@ def ibriview(request):
     mypath=BASE_DIR
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
     folders=[]
-    for dirname, dirnames, filenames in os.walk('/tmp/kml/'):
+    #for dirname, dirnames, filenames in os.walk('/tmp/kml/'):
+    for dirname, dirnames, filenames in os.walk('static/ibri/'):
         # print path to all subdirectories first.
         for subdirname in dirnames:
             folders.append(subdirname)
