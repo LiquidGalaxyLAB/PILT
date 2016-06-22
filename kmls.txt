@@ -1,2 +1,3 @@
-http://:8000/static/ibri/IBRI309/IBRI309R670.kml
-http://:8000/static/ibri/IBRI309/IBRI309R671.kml
+http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R667.kml
+http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R669.kml
+http://10.160.100.71:8000/static/ibri/IBRI308/IBRI308R668.kml
