@@ -165,7 +165,7 @@ def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
     print(raceparticipant.participant.user.username)
-    filename=create_routeparticipant_kml(positions,raceparticipant)
+    #filename=create_routeparticipant_kml(positions,raceparticipant)
     write_kml_race()
     send_kml_to_galaxy()
     return HttpResponseRedirect('/ground_races')

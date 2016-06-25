@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_64">
+        <Style id="stylesel_54">
+            <IconStyle id="substyle_54">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_54">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_55">
+            <IconStyle id="substyle_55">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_55">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_56">
+            <IconStyle id="substyle_56">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_56">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_57">
+            <IconStyle id="substyle_57">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_57">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_58">
+            <IconStyle id="substyle_58">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_58">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_59">
+            <IconStyle id="substyle_59">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_59">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_60">
+            <IconStyle id="substyle_60">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_60">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_61">
+            <IconStyle id="substyle_61">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_61">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_62">
+            <IconStyle id="substyle_62">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_62">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_63">
+            <IconStyle id="substyle_63">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_63">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_64">
+            <IconStyle id="substyle_64">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_64">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_65">
+            <IconStyle id="substyle_65">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_65">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_66">
+            <IconStyle id="substyle_66">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_66">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_67">
+            <IconStyle id="substyle_67">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_67">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_68">
+            <IconStyle id="substyle_68">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_68">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_69">
+            <IconStyle id="substyle_69">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_69">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_70">
+            <IconStyle id="substyle_70">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_70">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="stylesel_71">
+            <IconStyle id="substyle_71">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="link_71">
+                    <href>https://i.imgsafe.org/9216fc4611.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <name>IBRI98R112</name>
+        <Placemark id="feat_65">
+            <name>Base</name>
+            <Point id="geom_60">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_66">
+            <name>Point 0</name>
+            <styleUrl>#stylesel_54</styleUrl>
+            <Point id="geom_61">
+                <coordinates>-16.3101644,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_67">
+            <name>Point 1</name>
+            <styleUrl>#stylesel_55</styleUrl>
+            <Point id="geom_62">
+                <coordinates>-16.3095512,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_68">
+            <name>Point 2</name>
+            <styleUrl>#stylesel_56</styleUrl>
+            <Point id="geom_63">
+                <coordinates>-16.308938,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_69">
+            <name>Point 3</name>
+            <styleUrl>#stylesel_57</styleUrl>
+            <Point id="geom_64">
+                <coordinates>-16.3083248,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_70">
+            <name>Point 4</name>
+            <styleUrl>#stylesel_58</styleUrl>
+            <Point id="geom_65">
+                <coordinates>-16.3077116,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_71">
+            <name>Point 5</name>
+            <styleUrl>#stylesel_59</styleUrl>
+            <Point id="geom_66">
+                <coordinates>-16.3070984,28.4798769,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_72">
+            <name>Point 6</name>
+            <styleUrl>#stylesel_60</styleUrl>
+            <Point id="geom_67">
+                <coordinates>-16.3077116,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_73">
+            <name>Point 7</name>
+            <styleUrl>#stylesel_61</styleUrl>
+            <Point id="geom_68">
+                <coordinates>-16.3083248,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_74">
+            <name>Point 8</name>
+            <styleUrl>#stylesel_62</styleUrl>
+            <Point id="geom_69">
+                <coordinates>-16.308938,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_75">
+            <name>Point 9</name>
+            <styleUrl>#stylesel_63</styleUrl>
+            <Point id="geom_70">
+                <coordinates>-16.3095512,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_76">
+            <name>Point 10</name>
+            <styleUrl>#stylesel_64</styleUrl>
+            <Point id="geom_71">
+                <coordinates>-16.3101644,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_77">
+            <name>Point 11</name>
+            <styleUrl>#stylesel_65</styleUrl>
+            <Point id="geom_72">
+                <coordinates>-16.3101644,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_78">
+            <name>Point 12</name>
+            <styleUrl>#stylesel_66</styleUrl>
+            <Point id="geom_73">
+                <coordinates>-16.3095512,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_79">
+            <name>Point 13</name>
+            <styleUrl>#stylesel_67</styleUrl>
+            <Point id="geom_74">
+                <coordinates>-16.308938,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_80">
+            <name>Point 14</name>
+            <styleUrl>#stylesel_68</styleUrl>
+            <Point id="geom_75">
+                <coordinates>-16.3083248,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_81">
+            <name>Point 15</name>
+            <styleUrl>#stylesel_69</styleUrl>
+            <Point id="geom_76">
+                <coordinates>-16.3077116,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_82">
+            <name>Point 16</name>
+            <styleUrl>#stylesel_70</styleUrl>
+            <Point id="geom_77">
+                <coordinates>-16.3070984,28.4793379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_83">
+            <name>Point 17</name>
+            <styleUrl>#stylesel_71</styleUrl>
+            <Point id="geom_78">
+                <coordinates>-16.3070984,28.478799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_84">
+            <name>Back to base</name>
+            <Point id="geom_79">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
