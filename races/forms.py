@@ -11,3 +11,9 @@ class RaceForm(forms.ModelForm):
     class Meta:
         model = models.Race
         exclude=[]
+
+
+class AirRaceForm(forms.ModelForm):
+    class Meta:
+        model = models.AirRace
+        exclude = []
