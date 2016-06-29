@@ -14,7 +14,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between
-from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race
+from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race, write_kml_participant, write_kml_airrace
 from pilt.settings import BASE_DIR
 from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant
 from .forms import RaceForm, AirRaceForm
@@ -63,8 +63,10 @@ def new_airrace(request):
 
 def get_air_participants(race):
     onlyfiles = [f for f in os.listdir(race.folderPath) if isfile(join(race.folderPath, f))]
-    raceFolderPath= "airraces/"+str(race.pk)
+    raceFolderPath= "static/airraces/"+str(race.pk)
+    print(raceFolderPath)
     os.mkdir(raceFolderPath)
+    print(raceFolderPath)
 
     for kmlFile in onlyfiles:
         baseFilePath = race.folderPath + "/" + kmlFile
@@ -73,7 +75,7 @@ def get_air_participants(race):
 
         air_race_participant = AirRaceParticipant()
         air_race_participant.airrace = race
-        air_race_participant.kmlpath = race.folderPath + "/" + kmlFile
+        air_race_participant.kmlpath = kmlFile
         os.system("cp %s %s" % (baseFilePath, finalFilePath))
         airParticipantName = extract_information_kml(baseFilePath)
         air_race_participant.name = airParticipantName
@@ -228,12 +230,21 @@ def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
     print(raceparticipant.participant.user.username)
+    print race
+    print race.pk
+    print "-----"
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     write_kml_race()
-    send_kml_to_galaxy()
     return HttpResponseRedirect('/ground_races')
 
 
+
+def air_race_send(request,race, participant):
+    #filename=create_routeparticipant_kml(positions,raceparticipant)
+    participant = AirRaceParticipant.objects.get(pk=participant)
+    #write_kml_participant(race,participant)
+    write_kml_airrace(race)
+    return HttpResponseRedirect('../..')
 
 
 #Serializers

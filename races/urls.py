@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^create_participant/$',views.create_participant),
     url(r'^create_raceposition/$', views.create_raceposition),
     url(r'^ground_races/race/(?P<race>\w+)/send/(?P<participant>\w+)/$', views.ground_race_send, name='ground_race_send'),
+    url(r'^air_races/race/(?P<race>\w+)/send/(?P<participant>\w+)/$', views.air_race_send,name='air_race_send'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/', include(api.urls)),
     url(r'^api2', include(router.urls)),
