@@ -35,6 +35,45 @@ def write_kml(kmlFolder,folder):
     send_kml_to_galaxy()
 
 
+
+
+
+def write_kml_airrace(race):
+    print(BASE_DIR)
+    kmlFolder = BASE_DIR + "/static/airraces/" + race
+    print(kmlFolder)
+    print"-----"
+
+    ip_server = get_server_ip()
+    os.system("touch kmls.txt")
+    os.system("rm kmls.txt")
+    os.system("touch kmls.txt")
+    file = open("kmls.txt", 'w')
+    onlyfiles = [f for f in os.listdir(kmlFolder) if isfile(join(kmlFolder, f))]
+    for kmlFile in onlyfiles:
+        print(kmlFile)
+        file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/airraces/"+ race +"/"+ kmlFile + "\n")
+    file.close()
+    send_kml_to_galaxy()
+
+
+def write_kml_participant(race,participant):
+
+    print participant
+    print race
+    kmlFolder="static/airraces/"+ race + "/" + participant.kmlpath
+    print(kmlFolder)
+    ip_server = get_server_ip()
+    os.system("touch kmls.txt")
+    os.system("rm kmls.txt")
+    os.system("touch kmls.txt")
+    file = open("kmls.txt", 'w')
+    file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/"+ kmlFolder +"\n")
+    file.close()
+    send_kml_to_galaxy()
+
+
+
 def write_kml_race():
     kmlFolder=BASE_DIR+"/static/kml/"
     ip_server = get_server_ip()

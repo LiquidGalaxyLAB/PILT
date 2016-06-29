@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>2008-07-02_10-46.igc</name><description><![CDATA[<table cellpadding=0 cellspacing=0><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.paraglidingforum.com/leonardo/flight/1125286'><b>See more details</b></a></div></td></tr><tr bgcolor='#CCCCCC'><td>Pilot</td><td>  Vladimir Leuskov</td></tr><tr><td>Takeoff</td><td> La Chabre - FR [~0.4 km]</td></tr><tr bgcolor='#CCCCCC'><td>Takeoff time</td><td>    02/07/2008 - 13:48</td></tr><tr><td>Landing</td><td> Mison - FR [~4.0 km]</td></tr><tr bgcolor='#CCCCCC'><td>Linear distance</td><td> 21.9&nbsp;km</td></tr><tr><td>Duration</td><td> 3:58</td></tr><tr bgcolor='#CCCCCC'><td>XC score type</td><td> FAI Triangle</td></tr><tr><td>XC Distance</td><td> 63.5&nbsp;km</td></tr><tr bgcolor='#CCCCCC'><td>XC score</td><td> 127.1</td></tr><tr><td>Max speed</td><td> <span class="speed_style">107.8&nbsp;km/h</span></td></tr><tr bgcolor='#CCCCCC'><td>Max vario</td><td> <span class="vario_style">5.8&nbsp;m/sec</span></td></tr><tr><td>Min vario</td><td> <span class="vario_style">-5.3&nbsp;m/sec</span></td></tr><tr bgcolor='#CCCCCC'><td>Max alt (ASL)</td><td> <span class="altitude_style">2654&nbsp;m</span></td></tr><tr><td>Min alt (ASL)</td><td> <span class="altitude_style">551&nbsp;m</span></td></tr><tr bgcolor='#CCCCCC'><td>Takeoff alt (ASL)</td><td> <span class="altitude_style">1324&nbsp;m</span></td></tr><tr><td>Glider</td><td>Litespeed RS 3,5</td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'>KML file made by <a href='http://www.leonardoxc.net'>Leonardo</a></div></td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.paraglidingforum.com/leonardo/flight/1125286/kml/&c=FF0000&w=2&an=0&show_url=1'>URL of this KML file</div></td></tr></table>]]></description>
+<open>1</open>
+<NetworkLink>
+  <name>Tracklog</name>
+  <visibility>1</visibility>
+  <open>1</open>
+  <refreshVisibility>1</refreshVisibility>
+  <flyToView>1</flyToView>
+  <Link>
+	<href>http://www.paraglidingforum.com//leonardo/data/flights/kml/2008/57514/2008-07-02_10-46.igc.kmz</href>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>UpdateColor</name>
+  <Link>
+    <href>http://www.paraglidingforum.com/leonardo/flight/1125286/kml/&#38;c=FF0000&#38;w=2&#38;an=0&#38;updateColor=1</href>
+	</Link>
+</NetworkLink>
+<Placemark>
+  <name><![CDATA[La Chabre ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Laragne - <a href='http://www.paraglidingforum.com/leonardo/tracks/FR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>France</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.paraglidingforum.com/leonardo/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:9152'>See flights near this point [ 1695 ]</a></td></tr><tr ><td>Site record : <a href='http://www.paraglidingforum.com/leonardo/flight/794551'>116.8&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link to more information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>5.76167</longitude>
+    <latitude>44.2971</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>5.76167,44.2971,0</coordinates>
+  </Point>
+</Placemark><Placemark>
+  <name><![CDATA[Mison ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Alpes de Haute Provence - <a href='http://www.paraglidingforum.com/leonardo/tracks/FR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>France</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.paraglidingforum.com/leonardo/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:9677'>See flights near this point [ 17 ]</a></td></tr><tr ><td>Site record : <a href='http://www.paraglidingforum.com/leonardo/flight/1012779'>4.9&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link to more information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>5.83625</longitude>
+    <latitude>44.2768</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>5.83625,44.2768,0</coordinates>
+  </Point>
+</Placemark><Folder>
+		<name>XC Task</name>
+
+		<Placemark>
+		<name>XC Task</name>
+		<Style id='taskLine'>
+			<LineStyle><color>ffffffff</color></LineStyle>
+		</Style>
+		<LineString>
+			<altitudeMode>extrude</altitudeMode>
+			<coordinates>
+		5.7626833333333,44.2964,0 5.7129,44.285616666667,0 5.8636333333333,44.43255,0 5.9970833333333,44.202966666667,0 5.8436,44.242416666667,0 
+		</coordinates>
+		</LineString>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>5.7626833333333,44.2964,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>5.7129,44.285616666667,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>5.8636333333333,44.43255,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>5.9970833333333,44.202966666667,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/purple-square.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>5.8436,44.242416666667,0</coordinates>
+		 </Point>
+		</Placemark></Folder></Document>
+</kml>
