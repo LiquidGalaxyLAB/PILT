@@ -50,6 +50,19 @@ def write_kml_race():
 
 
 
+
+def write_idivt_kml():
+    ip_server = get_server_ip()
+    os.system("touch kmls.txt")
+    os.system("rm kmls.txt")
+    os.system("touch kmls.txt")
+    file = open("kmls.txt", 'w')
+    file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/idivt/SOLSONA-CONGOST.kml"+ "\n")
+    file.close()
+    send_kml_to_galaxy()
+
+
+
 def send_kml_to_galaxy():
     file_path = "kmls.txt"
     server_path = "/var/www"

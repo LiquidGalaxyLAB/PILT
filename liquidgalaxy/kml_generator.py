@@ -92,3 +92,11 @@ def create_participant_kml(positions,raceparticipant):
             "</kml>")
         kml_file.close()
         print("hola")
+
+def find_between(s, first, last):
+    try:
+        start = s.index(first) + len(first)
+        end = s.index(last, start)
+        return s[start:end]
+    except ValueError:
+        return ""

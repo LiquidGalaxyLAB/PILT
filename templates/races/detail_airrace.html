@@ -24,14 +24,15 @@
     <div id="test2" class="col s12">
 
         <ul class="collection">
+            {% for participant in participants %}
                 <li class="collection-item avatar">
                 <img src="" alt="" class="circle">
-                <span class="title"></span>
+                <span class="title">{{ participant.name }}</span>
                 </p>
                 <a href="" class="secondary-content"><i class="material-icons">grade</i></a>
 
                 </li>
-
+            {% endfor %}
         </ul>
         <p>hola</p>
 
