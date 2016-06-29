@@ -13,9 +13,10 @@ from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
-from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml
+from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between
 from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race
-from races.models import Race,RaceParticipant, Participant, Position, AirRace
+from pilt.settings import BASE_DIR
+from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant
 from .forms import RaceForm, AirRaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
@@ -36,8 +37,9 @@ def groundview(request):
     return render(request,'races/ground_race.html',{'races':races})
 
 def detail_airrace(request,pk):
-    airrace = get_object_or_404(AirRace, pk=pk)
-    return render(request, 'races/detail_airrace.html', {'race': airrace})
+    airrace = AirRace.objects.get(pk=pk)
+    airparticipants = AirRaceParticipant.objects.filter(airrace=airrace)
+    return render(request, 'races/detail_airrace.html', {'airrace': airrace, 'participants':airparticipants})
 
 
 def detail_race(request,pk):
@@ -52,20 +54,51 @@ def new_airrace(request):
         form = AirRaceForm(request.POST, request.FILES)
         if form.is_valid():
             race = form.save(commit=False)
-            get_air_participants(race.folderPath)
             race.save()
+            get_air_participants(race)
             return redirect('races:air_detail_race', pk=race.pk)
     return render(request, 'races/new_airrace.html', {'form': form})
 
 
 
-def get_air_participants(folderPath):
-    onlyfiles = [f for f in os.listdir(folderPath) if isfile(join(folderPath, f))]
+def get_air_participants(race):
+    onlyfiles = [f for f in os.listdir(race.folderPath) if isfile(join(race.folderPath, f))]
+    raceFolderPath= "airraces/"+str(race.pk)
+    os.mkdir(raceFolderPath)
+
     for kmlFile in onlyfiles:
-        print kmlFile
-        print "hola"
+        baseFilePath = race.folderPath + "/" + kmlFile
+        finalFilePath = BASE_DIR + "/" + raceFolderPath
+        print baseFilePath + "-->" + finalFilePath
+
+        air_race_participant = AirRaceParticipant()
+        air_race_participant.airrace = race
+        air_race_participant.kmlpath = race.folderPath + "/" + kmlFile
+        os.system("cp %s %s" % (baseFilePath, finalFilePath))
+        airParticipantName = extract_information_kml(baseFilePath)
+        air_race_participant.name = airParticipantName
+        air_race_participant.save()
+
     return HttpResponseRedirect('/air_race')
 
+
+
+def extract_information_kml(kmlPath):
+    import re  # Import the regex module.
+    err_occur = []  # The list where we will store results.
+    first="<td>Pilot</td><td>"
+    last="</td></tr><tr><td>Takeoff</td>"
+    lastv2="</td></tr><tr><td>Startplatz</td>"
+    pattern = re.compile("<td>Pilot</td><td>", re.IGNORECASE)  # Compile a case-insensitive regex pattern.
+    with open(kmlPath, 'rt') as in_file:  # open file for reading text.
+        for linenum, line in enumerate(in_file):  # Iterate on file per line, keeping track of line numbers.
+            #print line
+            if pattern.search(line) != None:  # If pattern search finds a match,
+                err_occur.append((linenum, line.rstrip('\n')))  # strip linebreaks, store line and line number as tuple.
+                name=find_between(line,first,last)
+                if name=="":
+                    name = find_between(line, first, lastv2)
+                return name
 
 
 @csrf_exempt

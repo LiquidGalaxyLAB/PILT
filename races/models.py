@@ -16,9 +16,9 @@ class AirRace(models.Model):
         return str(self.pk)
 
 class AirRaceParticipant(models.Model):
-    airrace = models.ForeignKey(AirRace)
-    kmlpath = models.FileField(upload_to="airraces/")
-
+    airrace = models.ForeignKey(AirRace, on_delete=models.CASCADE,)
+    kmlpath = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
 
 class Race(models.Model):
     name = models.CharField(max_length=100)

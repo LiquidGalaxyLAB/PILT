@@ -6,9 +6,14 @@ from os.path import isfile,join
 import os
 
 # Create your views here.
-from liquidgalaxy.lgCommunication import write_ip, write_kml
+from liquidgalaxy.lgCommunication import write_ip, write_kml, write_idivt_kml
 from pilt.settings import BASE_DIR
 
+
+
+def idivt(request):
+    write_idivt_kml()
+    return render(request,'pilt/index.html', {})
 
 def indexview(request):
     return render(request,'pilt/index.html', {})

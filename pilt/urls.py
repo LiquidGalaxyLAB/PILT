@@ -23,6 +23,7 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^idivt/$', views.idivt, name='idivt'),
     url(r'^ibri/$', views.ibriview, name='ibriview'),
     url(r'^ibri/send/(?P<folder>\w+)/$', views.ibri_send, name='ibrisend'),
     url(r'', include('races.urls',namespace='races')),
