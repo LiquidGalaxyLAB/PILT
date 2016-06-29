@@ -1,3 +1,6 @@
+import os
+from os.path import isfile,join
+
 from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
@@ -12,8 +15,8 @@ from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml
 from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race
-from races.models import Race,RaceParticipant, Participant, Position
-from .forms import RaceForm
+from races.models import Race,RaceParticipant, Participant, Position, AirRace
+from .forms import RaceForm, AirRaceForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
@@ -23,8 +26,8 @@ from .serializers import RaceSerializer,RaceParticipantSerializer, UserSerialize
 # Create your views here.
 
 def airview(request):
-    race = Race()
-    races = Race.objects.all().filter(type=1)
+    race = AirRace()
+    races = AirRace.objects.all()
     return render(request,'races/air_race.html', {'races':races})
 
 def groundview(request):
@@ -32,11 +35,38 @@ def groundview(request):
     races=Race.objects.all().filter(type=0)
     return render(request,'races/ground_race.html',{'races':races})
 
+def detail_airrace(request,pk):
+    airrace = get_object_or_404(AirRace, pk=pk)
+    return render(request, 'races/detail_airrace.html', {'race': airrace})
+
 
 def detail_race(request,pk):
     race = get_object_or_404(Race, pk=pk)
     participants = get_all_raceparticipants(race)
     return render(request, 'races/detail_race.html', {'race': race, 'participants':participants})
+
+
+def new_airrace(request):
+    form = AirRaceForm()
+    if request.method == "POST":
+        form = AirRaceForm(request.POST, request.FILES)
+        if form.is_valid():
+            race = form.save(commit=False)
+            get_air_participants(race.folderPath)
+            race.save()
+            return redirect('races:air_detail_race', pk=race.pk)
+    return render(request, 'races/new_airrace.html', {'form': form})
+
+
+
+def get_air_participants(folderPath):
+    onlyfiles = [f for f in os.listdir(folderPath) if isfile(join(folderPath, f))]
+    for kmlFile in onlyfiles:
+        print kmlFile
+        print "hola"
+    return HttpResponseRedirect('/air_race')
+
+
 
 @csrf_exempt
 def new_race(request):

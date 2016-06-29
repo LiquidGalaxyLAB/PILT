@@ -8,6 +8,17 @@ from django.shortcuts import render
 # Create your models here.
 from django.http import HttpResponseRedirect
 
+class AirRace(models.Model):
+    name=models.CharField(max_length=100)
+    folderPath=models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+class AirRaceParticipant(models.Model):
+    airrace = models.ForeignKey(AirRace)
+    kmlpath = models.FileField(upload_to="airraces/")
+
 
 class Race(models.Model):
     name = models.CharField(max_length=100)
@@ -25,6 +36,7 @@ class Race(models.Model):
 
     initial_date = models.DateField(verbose_name="Initial date")
     initial_time = models.TimeField(verbose_name="Initial time")
+
 
 
 class Participant(models.Model):
