@@ -163,6 +163,8 @@ def edit_airrace(request,pk):
     if request.method == 'POST':
         form = AirRaceForm(request.POST, instance=race)
         if form.is_valid():
+            airrace=form.save(commit=False)
+            airrace.save()
             return HttpResponseRedirect('/air_races')
     return render(request, 'races/new_race.html', {'form': form})
 

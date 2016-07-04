@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>2016-07-03-XCS-AAA-01.igc</name><description><![CDATA[<table cellpadding=0 cellspacing=0><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://xc.abvl.com.br/flight/199587'><b>Veja mais detalhes</b></a></div></td></tr><tr bgcolor='#CCCCCC'><td>Piloto</td><td>  Tulio Barbosa</td></tr><tr><td>Decolagem</td><td> Jaraguá - BR [~0.3 km]</td></tr><tr bgcolor='#CCCCCC'><td>Hora da decolagem</td><td>    03/07/2016 - 12:56</td></tr><tr><td>Pouso</td><td> Parauna - BR [~33.6 km]</td></tr><tr bgcolor='#CCCCCC'><td>Distância livre</td><td> 150.4&nbsp;km</td></tr><tr><td>Duração</td><td> 4:42</td></tr><tr bgcolor='#CCCCCC'><td>Tipo de pontuação OLC</td><td> Distância livre</td></tr><tr><td>Distância OLC</td><td> 155.4&nbsp;km</td></tr><tr bgcolor='#CCCCCC'><td>Pontuação OLC</td><td> 233.1</td></tr><tr><td>Velocidade máxima</td><td> <span class="speed_style">73.1&nbsp;km/h</span></td></tr><tr bgcolor='#CCCCCC'><td>Maior Ascendente</td><td> <span class="vario_style">4.3&nbsp;m/sec</span></td></tr><tr><td>Maior descendente</td><td> <span class="vario_style">-4.8&nbsp;m/sec</span></td></tr><tr bgcolor='#CCCCCC'><td>Altitude máxima</td><td> <span class="altitude_style">2798&nbsp;m</span></td></tr><tr><td>Altitude mínima</td><td> <span class="altitude_style">588&nbsp;m</span></td></tr><tr bgcolor='#CCCCCC'><td>Altitude da decolagem</td><td> <span class="altitude_style">1168&nbsp;m</span></td></tr><tr><td>Asa</td><td>Elan</td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'>Arquivo KML feito por <a href='http://www.leonardoxc.net'>Leonardo</a></div></td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://xc.abvl.com.br/flight/199587/kml/&c=ff0000&w=2&an=0&show_url=1'>URL of this KML file</div></td></tr></table>]]></description>
+<open>1</open>
+<NetworkLink>
+  <name>Tracklog</name>
+  <visibility>1</visibility>
+  <open>1</open>
+  <refreshVisibility>1</refreshVisibility>
+  <flyToView>1</flyToView>
+  <Link>
+	<href>http://xc.abvl.com.br//data/flights/kml/2016/1979/2016-07-03-XCS-AAA-01.igc.kmz</href>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>UpdateColor</name>
+  <Link>
+    <href>http://xc.abvl.com.br/flight/199587/kml/&#38;c=ff0000&#38;w=2&#38;an=0&#38;updateColor=1</href>
+	</Link>
+</NetworkLink>
+<Placemark>
+  <name><![CDATA[Jaraguá ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Região: GO - <a href='http://xc.abvl.com.br/tracks/BR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>Brasil</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://xc.abvl.com.br/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:8831'>Ver vôos próximos a este ponto [ 5766 ]</a></td></tr><tr ><td>Recorde local : <a href='http://xc.abvl.com.br/flight/57979'>318.1&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link com mais informação : <a href="http://www.ciadovento.com.br" target="_blank">http://www.ciadovento.com.br</a></td></tr><tr ><td>Rampa para 02 Decolagens, condição animal, termicas fortes, com predominancia de ventos Norte-Nordeste-Leste</td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>-49.3314</longitude>
+    <latitude>-15.7964</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>-49.3314,-15.7964,0</coordinates>
+  </Point>
+</Placemark><Placemark>
+  <name><![CDATA[Parauna ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Região: GO - <a href='http://xc.abvl.com.br/tracks/BR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>Brasil</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://xc.abvl.com.br/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:9555'>Ver vôos próximos a este ponto [ 2 ]</a></td></tr><tr ><td>Recorde local : <a href='http://xc.abvl.com.br/flight/76488'>1.6&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link com mais informação : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>-50.4252</longitude>
+    <latitude>-16.9443</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>-50.4252,-16.9443,0</coordinates>
+  </Point>
+</Placemark><Folder>
+		<name>XC Task</name>
+
+		<Placemark>
+		<name>XC Task</name>
+		<Style id='taskLine'>
+			<LineStyle><color>ffffffff</color></LineStyle>
+		</Style>
+		<LineString>
+			<altitudeMode>extrude</altitudeMode>
+			<coordinates>
+		-49.3301,-15.7908,0 -49.950233333333,-16.142283333333,0 -49.979,-16.23905,0 -50.41155,-16.570566666667,0 -50.4292,-16.642566666667,0 
+		</coordinates>
+		</LineString>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>-49.3301,-15.7908,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>-49.950233333333,-16.142283333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>-49.979,-16.23905,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>-50.41155,-16.570566666667,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/purple-square.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>-50.4292,-16.642566666667,0</coordinates>
+		 </Point>
+		</Placemark></Folder></Document>
+</kml>
