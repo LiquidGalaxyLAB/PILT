@@ -89,11 +89,13 @@ def extract_information_kml(kmlPath):
     import re  # Import the regex module.
     err_occur = []  # The list where we will store results.
     first="<td>Pilot</td><td>"
+    firstv2="<td>Piloto</td><td>"
     last="</td></tr><tr><td>Takeoff</td>"
     lastv2="</td></tr><tr><td>Startplatz</td>"
-    pattern = re.compile("<td>Pilot</td><td>", re.IGNORECASE)  # Compile a case-insensitive regex pattern.
+    pattern = re.compile(first, re.IGNORECASE)  # Compile a case-insensitive regex pattern.
+    patternv2 = re.compile(firstv2, re.IGNORECASE)  # Compile a case-insensitive regex pattern.
     with open(kmlPath, 'rt') as in_file:  # open file for reading text.
-        for linenum, line in enumerate(in_file):  # Iterate on file per line, keeping track of line numbers.
+        for linenum, line in enumerate(in_file):  # Iterssate on file per line, keeping track of line numbers.
             #print line
             if pattern.search(line) != None:  # If pattern search finds a match,
                 err_occur.append((linenum, line.rstrip('\n')))  # strip linebreaks, store line and line number as tuple.
@@ -101,6 +103,13 @@ def extract_information_kml(kmlPath):
                 if name=="":
                     name = find_between(line, first, lastv2)
                 return name
+            elif patternv2.search(line) != None:  # If pattern search finds a match,
+                err_occur.append((linenum, line.rstrip('\n')))  # strip linebreaks, store line and line number as tuple.
+                name=find_between(line,first,last)
+                if name=="":
+                    name = find_between(line, first, lastv2)
+                return name
+
 
 
 @csrf_exempt
@@ -121,27 +130,40 @@ def get_all_raceparticipants(race):
     return participants
 
 
+#CRUD operations
+def delete_airrace(request,pk):
+    race=AirRace.objects.get(pk=pk)
+    baseFilePath = BASE_DIR + "/static/airraces/" + str(race.pk)
+    print baseFilePath
+    race.delete()
+    os.system("rm -R %s" % (baseFilePath))
+    return HttpResponseRedirect('/air_races')
 def delete_race(request,pk):
     race=Race.objects.get(pk=pk)
     url_destination = race.type
     race.delete()
     if url_destination == 0:
-        return HttpResponseRedirect('/ground_race')
+        return HttpResponseRedirect('/ground_races')
     else:
-        return HttpResponseRedirect('/air_race')
-
+        return HttpResponseRedirect('/air_races')
 def edit_race(request,pk):
     race=Race.objects.get(pk=pk)
     form = RaceForm(instance=race)
     if request.method == 'POST':
         form = RaceForm(request.POST, instance=race)
         if form.is_valid():
-            drone = form.save(commit=False)
-            drone.save()
             if race.type == 0:
                 return HttpResponseRedirect('/ground_race')
             else:
                 return HttpResponseRedirect('/air_race')
+    return render(request, 'races/new_race.html', {'form': form})
+def edit_airrace(request,pk):
+    race=AirRace.objects.get(pk=pk)
+    form = AirRaceForm(instance=race)
+    if request.method == 'POST':
+        form = AirRaceForm(request.POST, instance=race)
+        if form.is_valid():
+            return HttpResponseRedirect('/air_races')
     return render(request, 'races/new_race.html', {'form': form})
 
 @csrf_exempt
@@ -219,13 +241,9 @@ def create_raceposition(request):
         position.save()
         get_raceparticipant(participant,race)
     return HttpResponseRedirect('/')
-
-
-
 def get_racepositions(raceparticipant):
     positions = Position.objects.filter(raceparticipant=raceparticipant)
     return positions
-
 def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
@@ -236,9 +254,6 @@ def ground_race_send(request,race, participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     write_kml_race()
     return HttpResponseRedirect('/ground_races')
-
-
-
 def air_race_send(request,race, participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = AirRaceParticipant.objects.get(pk=participant)
@@ -251,14 +266,10 @@ def air_race_send(request,race, participant):
 class RaceViewSet(viewsets.ModelViewSet):
     queryset=Race.objects.all()
     serializer_class = RaceSerializer
-
-
-
 class RaceParticipantViewSet(viewsets.ModelViewSet):
     queryset=RaceParticipant.objects.all()
     serializer_class = RaceParticipantSerializer
     print("hola")
-
 class ParticipantViewSet(viewsets.ModelViewSet):
     queryset = Participant.objects.all()
     serializer_class = RaceParticipantSerializer
