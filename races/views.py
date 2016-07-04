@@ -242,8 +242,8 @@ def ground_race_send(request,race, participant):
 def air_race_send(request,race, participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = AirRaceParticipant.objects.get(pk=participant)
-    #write_kml_participant(race,participant)
-    write_kml_airrace(race)
+    write_kml_participant(race,participant)
+    #write_kml_airrace(race)
     return HttpResponseRedirect('../..')
 
 
