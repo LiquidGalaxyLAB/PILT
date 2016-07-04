@@ -1,4 +1,1 @@
-http://:8000/static/airraces/7/2008-07-02_10-46.igc-2.kml
-http://:8000/static/airraces/7/2008-07-02_10-46.igc.kml
-http://:8000/static/airraces/7/2010-07-16_12-08.igc-2.kml
-http://:8000/static/airraces/7/66QLaGe2.igc.kml
+http://10.160.100.71:8000/static/airraces/7/66QLaGe2.igc.kml
