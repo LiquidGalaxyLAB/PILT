@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>2016-07-03_08-39.igc</name><description><![CDATA[<table cellpadding=0 cellspacing=0><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.paraglidingforum.com/leonardo/flight/1442645'><b>See more details</b></a></div></td></tr><tr bgcolor='#CCCCCC'><td>Pilot</td><td>  Emre Gurer</td></tr><tr><td>Takeoff</td><td> Baba-dag - Oludeniz - TR [~0.1 km]</td></tr><tr bgcolor='#CCCCCC'><td>Takeoff time</td><td>    03/07/2016 - 11:40</td></tr><tr><td>Landing</td><td> Imecik - TR [~16.9 km]</td></tr><tr bgcolor='#CCCCCC'><td>Linear distance</td><td> 109.4&nbsp;km</td></tr><tr><td>Duration</td><td> 6:22</td></tr><tr bgcolor='#CCCCCC'><td>XC score type</td><td> Free Flight</td></tr><tr><td>XC Distance</td><td> 123.3&nbsp;km</td></tr><tr bgcolor='#CCCCCC'><td>XC score</td><td> 185.0</td></tr><tr><td>Max speed</td><td> <span class="speed_style">65.0&nbsp;km/h</span></td></tr><tr bgcolor='#CCCCCC'><td>Max vario</td><td> <span class="vario_style">5.3&nbsp;m/sec</span></td></tr><tr><td>Min vario</td><td> <span class="vario_style">-5.3&nbsp;m/sec</span></td></tr><tr bgcolor='#CCCCCC'><td>Max alt (ASL)</td><td> <span class="altitude_style">3925&nbsp;m</span></td></tr><tr><td>Min alt (ASL)</td><td> <span class="altitude_style">918&nbsp;m</span></td></tr><tr bgcolor='#CCCCCC'><td>Takeoff alt (ASL)</td><td> <span class="altitude_style">1714&nbsp;m</span></td></tr><tr><td>Glider</td><td>Mantra M4</td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'>KML file made by <a href='http://www.leonardoxc.net'>Leonardo</a></div></td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.paraglidingforum.com/leonardo/flight/1442645/kml/&c=ff0000&w=2&an=0&show_url=1'>URL of this KML file</div></td></tr></table>]]></description>
+<open>1</open>
+<NetworkLink>
+  <name>Tracklog</name>
+  <visibility>1</visibility>
+  <open>1</open>
+  <refreshVisibility>1</refreshVisibility>
+  <flyToView>1</flyToView>
+  <Link>
+	<href>http://www.paraglidingforum.com//leonardo/data/flights/kml/2016/25463/2016-07-03_08-39.igc.kmz</href>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>UpdateColor</name>
+  <Link>
+    <href>http://www.paraglidingforum.com/leonardo/flight/1442645/kml/&#38;c=ff0000&#38;w=2&#38;an=0&#38;updateColor=1</href>
+	</Link>
+</NetworkLink>
+<Placemark>
+  <name><![CDATA[Baba-dag - Oludeniz ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Oludeniz - Fethiye - <a href='http://www.paraglidingforum.com/leonardo/tracks/TR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>Turkey</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.paraglidingforum.com/leonardo/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:8967'>See flights near this point [ 2197 ]</a></td></tr><tr ><td>Site record : <a href='http://www.paraglidingforum.com/leonardo/flight/1442645'>109.5&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link to more information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>29.1696</longitude>
+    <latitude>36.539</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>29.1696,36.539,0</coordinates>
+  </Point>
+</Placemark><Placemark>
+  <name><![CDATA[Imecik ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Antalya, Korkuteli - <a href='http://www.paraglidingforum.com/leonardo/tracks/TR/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:all'>Turkey</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.paraglidingforum.com/leonardo/tracks/world/alltimes/brand:all,cat:,class:all,xctype:all,club:all,pilot:0_,takeoff:9099'>See flights near this point [ 4 ]</a></td></tr><tr ><td>Site record : <a href='http://www.paraglidingforum.com/leonardo/flight/1051'>36.7&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link to more information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>30.254</longitude>
+    <latitude>36.8628</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>30.254,36.8628,0</coordinates>
+  </Point>
+</Placemark><Folder>
+		<name>XC Task</name>
+
+		<Placemark>
+		<name>XC Task</name>
+		<Style id='taskLine'>
+			<LineStyle><color>ffffffff</color></LineStyle>
+		</Style>
+		<LineString>
+			<altitudeMode>extrude</altitudeMode>
+			<coordinates>
+		29.169533333333,36.536066666667,0 29.5298,36.5821,0 29.4993,36.618983333333,0 29.67825,36.58485,0 30.243733333333,37.014683333333,0 
+		</coordinates>
+		</LineString>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>29.169533333333,36.536066666667,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>29.5298,36.5821,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>29.4993,36.618983333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>29.67825,36.58485,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/purple-square.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>30.243733333333,37.014683333333,0</coordinates>
+		 </Point>
+		</Placemark></Folder></Document>
+</kml>

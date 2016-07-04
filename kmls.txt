@@ -1,1 +1,1 @@
-http://10.160.100.71:8000/static/airraces/7/66QLaGe2.igc.kml
+http://10.160.100.200:8000/static/airraces/16/2016-07-04-XFH-000-01.igc.kml
