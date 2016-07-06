@@ -11,6 +11,7 @@ from django.http import HttpResponseRedirect
 class AirRace(models.Model):
     name=models.CharField(max_length=100)
     folderPath=models.CharField(max_length=100)
+    imageURL = models.CharField(max_length=200)
 
     def __unicode__(self):
         return str(self.pk)
