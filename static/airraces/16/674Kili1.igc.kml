@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>674Kili1.igc</name><description><![CDATA[<table cellpadding=0 cellspacing=0><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=show_flight&flightID=756801'><b>Mehr Details anzeigen</b></a></div></td></tr><tr bgcolor='#CCCCCC'><td>Pilot</td><td>  Kilian Ellenrieder</td></tr><tr><td>Startplatz</td><td> Zugspitze - DE [~1.0 km]</td></tr><tr bgcolor='#CCCCCC'><td>Startzeitpunkt</td><td>    04/07/2016 - 6:25</td></tr><tr><td>Landeplatz</td><td> Zugspitze - DE [~3.3 km]</td></tr><tr bgcolor='#CCCCCC'><td>Luftlinie</td><td> 2.5&nbsp;km</td></tr><tr><td>Dauer</td><td> 0:09</td></tr><tr bgcolor='#CCCCCC'><td>XC Punkte Typ</td><td> Freier Flug</td></tr><tr><td>XC Distanz</td><td> 3.7&nbsp;km</td></tr><tr bgcolor='#CCCCCC'><td>DHV-XC Punkte</td><td> 5.6</td></tr><tr><td>Maximale Geschwindigkeit</td><td> <span class="speed_style">44.1&nbsp;km/h</span></td></tr><tr bgcolor='#CCCCCC'><td>Maximales Steigen</td><td> <span class="vario_style">0.3&nbsp;m/sec</span></td></tr><tr><td>Maximales Sinken</td><td> <span class="vario_style">-2.1&nbsp;m/sec</span></td></tr><tr bgcolor='#CCCCCC'><td>Grösste Höhe</td><td> <span class="altitude_style">1821&nbsp;m</span></td></tr><tr><td>Minimale Höhe</td><td> <span class="altitude_style">1147&nbsp;m</span></td></tr><tr bgcolor='#CCCCCC'><td>Start Höhe</td><td> <span class="altitude_style">1816&nbsp;m</span></td></tr><tr><td>Gerät</td><td>Heartbeat 25</td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'>KML File erstellt durch <a href='http://www.leonardoxc.net'>Leonardo</a></div></td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.dhv-xc.de/xc/modules/leonardo/./download.php?type=kml_trk&flightID=756801&c=ff0000&w=2&an=0&show_url=1'>URL of this KML file</div></td></tr></table>]]></description>
+<open>1</open>
+<NetworkLink>
+  <name>Tracklog</name>
+  <visibility>1</visibility>
+  <open>1</open>
+  <refreshVisibility>1</refreshVisibility>
+  <flyToView>1</flyToView>
+  <Link>
+	<href>http://www.dhv-xc.de/xc/modules/leonardo/./data/flights/kml/2016/2889/674Kili1.igc.kmz</href>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>UpdateColor</name>
+  <Link>
+    <href>http://www.dhv-xc.de/xc/modules/leonardo/./download.php?type=kml_trk&#38;flightID=756801&#38;c=ff0000&#38;w=2&#38;an=0&#38;updateColor=1</href>
+	</Link>
+</NetworkLink>
+<Placemark>
+  <name><![CDATA[Zugspitze ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Garmisch-Partenkirchen - <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=0&year=0&season=0&country=DE'>Germany</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=10123&year=0&season=0'>Flüge in der Nähe dieses Punktes anzeigen [ 32 ]</a></td></tr><tr ><td>Fluggebietsrekord : <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=show_flight&flightID=299059'>22.7&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link für mehr Information : -</td></tr><tr ><td>Schneefernerkopf</td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>10.9683</longitude>
+    <latitude>47.4132</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>10.9683,47.4132,0</coordinates>
+  </Point>
+</Placemark><Folder>
+		<name>XC Task</name>
+
+		<Placemark>
+		<name>XC Task</name>
+		<Style id='taskLine'>
+			<LineStyle><color>ffffffff</color></LineStyle>
+		</Style>
+		<LineString>
+			<altitudeMode>extrude</altitudeMode>
+			<coordinates>
+		10.960466666667,47.422733333333,0 10.957683333333,47.418666666667,0 10.92735,47.425433333333,0 10.932866666667,47.427483333333,0 10.929283333333,47.42945,0 
+		</coordinates>
+		</LineString>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>10.960466666667,47.422733333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>10.957683333333,47.418666666667,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>10.92735,47.425433333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>10.932866666667,47.427483333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/purple-square.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>10.929283333333,47.42945,0</coordinates>
+		 </Point>
+		</Placemark></Folder></Document>
+</kml>
