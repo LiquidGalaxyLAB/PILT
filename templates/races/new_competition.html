@@ -1,0 +1,13 @@
+ {% extends 'base.html' %}
+
+
+{% block content %}
+        <h1>New Competition</h1>
+        <form method="POST" class="post-form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.media}}
+            {{ form.as_p }}
+            {{ form.non_field_errors }}
+            <button type="submit" class="save btn btn-default" style="float:right">Save</button>
+        </form>
+{% endblock %}

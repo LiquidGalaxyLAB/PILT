@@ -781,7 +781,7 @@
             <name>1_Lockheed_Martin.png</name>
             <visibility>1</visibility>
             <description>Title</description>
-            <Icon>imagenes/247400001610.1/247400001610.1.jpg</Icon>
+            <Icon>http://10.160.100.200:8000/static/idivt/imagenes/247400001610.1/247400001610.1.jpg</Icon>
             <Region id="Region_Lockheed">
                 <LatLonAltBox>
                     <north>41.85942</north>

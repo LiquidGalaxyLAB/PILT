@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1> This is an Air Race!</h1>
+        <div class="row">
+
+    {% for task in tasks %}
+            <div class="col s6 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src={{race.imageURL}}>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{ task.name }}<i class="material-icons right">more_vert</i></span>
+
+                        <p>This race will start on</p>
+                        <p>On the day </p>
+
+                    </div>
+
+                    <div class="card-action">
+                    </div>
+                </div>
+            </div>
+    {% endfor %}
+        </div>
+
+
+  <a href="task/new" class="btn-floating btn-large waves-effect waves-light green" style="float:right;"><i class="material-icons">add</i></a>
+
+
+{% endblock %}

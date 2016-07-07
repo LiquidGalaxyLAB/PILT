@@ -8,6 +8,25 @@ from django.shortcuts import render
 # Create your models here.
 from django.http import HttpResponseRedirect
 
+class Competition(models.Model):
+    name=models.CharField(max_length=100)
+    imageURL=models.CharField(max_length=100)
+
+class Task(models.Model):
+    name = models.CharField(max_length=100)
+    imageURL = models.CharField(max_length=100)
+    file = models.FileField(upload_to='documents/%Y/%m/%d')
+    competition = models.ForeignKey(Competition, on_delete=models.CASCADE)
+
+
+class CompetitionTaskParticipant(models.Model):
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, )
+    kmlpath = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
+
+
+
+
 class AirRace(models.Model):
     name=models.CharField(max_length=100)
     folderPath=models.CharField(max_length=100)
