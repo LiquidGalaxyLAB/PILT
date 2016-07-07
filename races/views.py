@@ -16,8 +16,8 @@ from rest_framework.response import Response
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between
 from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race, write_kml_participant, write_kml_airrace
 from pilt.settings import BASE_DIR
-from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant
-from .forms import RaceForm, AirRaceForm
+from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition
+from .forms import RaceForm, AirRaceForm, CompetitionForm, TaskForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
@@ -25,6 +25,12 @@ from .serializers import RaceSerializer,RaceParticipantSerializer, UserSerialize
 
 
 # Create your views here.
+
+
+def competitionview(request):
+    competitions = Competition.objects.all()
+    return render(request,'races/competition.html', {'competitions':competitions})
+
 
 def airview(request):
     race = AirRace()
@@ -35,6 +41,14 @@ def groundview(request):
     race=Race()
     races=Race.objects.all().filter(type=0)
     return render(request,'races/ground_race.html',{'races':races})
+
+
+def taskview(request,pk):
+    competition = Competition.objects.get(pk=pk)
+    tasks = Task.objects.filter(competition=competition)
+    return render(request,'races/task.html',{'tasks':tasks})
+
+
 
 def detail_airrace(request,pk):
     airrace = AirRace.objects.get(pk=pk)
@@ -47,6 +61,42 @@ def detail_race(request,pk):
     participants = get_all_raceparticipants(race)
     return render(request, 'races/detail_race.html', {'race': race, 'participants':participants})
 
+
+def detail_competition(request,pk):
+    competition = get_object_or_404(Competition, pk=pk)
+    tasks = Task.objects.filter(competition=competition)
+    return render(request, 'races/detail_competition.html', {'tasks': tasks})
+
+def detail_task(request,pk):
+    tasks = get_object_or_404(Task, pk=pk)
+    tasks = Task.objects.filter(competition=competition)
+
+    return render(request, 'races/detail_competition.html', {'tasks': tasks})
+
+
+def new_task(request,pk):
+    form = TaskForm()
+    competition = get_object_or_404(Competition, pk=pk)
+    print competition.name
+    if request.method == "POST":
+        form = TaskForm(request.POST, request.FILES)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.competition = competition
+            task.save()
+            return redirect('races:detail_task.hml', pk=task.pk)
+    return render(request, 'races/new_task.html', {'form': form})
+
+
+def new_competition(request):
+    form = CompetitionForm()
+    if request.method == "POST":
+        form = CompetitionForm(request.POST, request.FILES)
+        if form.is_valid():
+            competition = form.save(commit=False)
+            competition.save()
+            return redirect('races:detail_competition.hml', pk=competition.pk)
+    return render(request, 'races/new_competition.html', {'form': form})
 
 def new_airrace(request):
     form = AirRaceForm()

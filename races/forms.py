@@ -17,3 +17,14 @@ class AirRaceForm(forms.ModelForm):
     class Meta:
         model = models.AirRace
         exclude = []
+
+class CompetitionForm(forms.ModelForm):
+    class Meta:
+        model = models.Competition
+        exclude = []
+
+class TaskForm(forms.ModelForm):
+    class Meta:
+        model = models.Task
+        fields= ['name','imageURL','file']
+        exclude = []

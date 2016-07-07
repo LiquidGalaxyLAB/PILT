@@ -11,6 +11,13 @@ router.register(r'/racesparticipants',views.RaceParticipantViewSet,'racespartici
 router.register(r'/particpants',views.ParticipantViewSet,'participants')
 
 urlpatterns = [
+    url(r'^competitions/$', views.competitionview, name='competition'),
+    url(r'^competitions/new$', views.new_competition, name='new_competition'),
+    url(r'^competitions/(?P<pk>[0-9]+)/$', views.detail_competition, name='detail_competition'),
+    url(r'^competitions/(?P<pk>[0-9]+)/task/$', views.taskview, name='task'),
+    url(r'^competitions/(?P<pk>[0-9]+)/task/new/$', views.new_task, name='task'),
+    url(r'^competitions/(?P<pk>[0-9]+)/task/(?P<pk>[0-9]+)/$', views.detail_task, name='task'),
+
     url(r'^air_races/$', views.airview, name='airrace'),
     url(r'^ground_races/$', views.groundview, name='groundrace'),
     url(r'^ground_races/race/new/$',views.new_race, name='new_race'),
