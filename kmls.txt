@@ -1,1 +1,1 @@
-http://10.160.100.200:8000/static/idivt/SOLSONA-CONGOST.kml
+http://:8000/static/kml/1/Test2asfasgfasg/97.kml

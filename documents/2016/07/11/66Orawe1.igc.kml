@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>66Orawe1.igc</name><description><![CDATA[<table cellpadding=0 cellspacing=0><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=show_flight&flightID=754563'><b>Mehr Details anzeigen</b></a></div></td></tr><tr bgcolor='#CCCCCC'><td>Pilot</td><td>  Rainer Weber</td></tr><tr><td>Startplatz</td><td> Speikboden - IT [~0.3 km]</td></tr><tr bgcolor='#CCCCCC'><td>Startzeitpunkt</td><td>    24/06/2016 - 13:57</td></tr><tr><td>Landeplatz</td><td> Rio Bianco - IT [~3.5 km]</td></tr><tr bgcolor='#CCCCCC'><td>Luftlinie</td><td> 7.3&nbsp;km</td></tr><tr><td>Dauer</td><td> 0:37</td></tr><tr bgcolor='#CCCCCC'><td>XC Punkte Typ</td><td> Freier Flug</td></tr><tr><td>XC Distanz</td><td> 11.5&nbsp;km</td></tr><tr bgcolor='#CCCCCC'><td>DHV-XC Punkte</td><td> 17.2</td></tr><tr><td>Maximale Geschwindigkeit</td><td> <span class="speed_style">49.8&nbsp;km/h</span></td></tr><tr bgcolor='#CCCCCC'><td>Maximales Steigen</td><td> <span class="vario_style">4.9&nbsp;m/sec</span></td></tr><tr><td>Maximales Sinken</td><td> <span class="vario_style">-4.3&nbsp;m/sec</span></td></tr><tr bgcolor='#CCCCCC'><td>Grösste Höhe</td><td> <span class="altitude_style">3377&nbsp;m</span></td></tr><tr><td>Minimale Höhe</td><td> <span class="altitude_style">1029&nbsp;m</span></td></tr><tr bgcolor='#CCCCCC'><td>Start Höhe</td><td> <span class="altitude_style">2339&nbsp;m</span></td></tr><tr><td>Gerät</td><td>Atlas x-alps</td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'>KML File erstellt durch <a href='http://www.leonardoxc.net'>Leonardo</a></div></td></tr><tr bgcolor='#D7E1EE'><td></td><td><div align='right'><a href='http://www.dhv-xc.de/xc/modules/leonardo/./download.php?type=kml_trk&flightID=754563&c=ff0000&w=2&an=0&show_url=1'>URL of this KML file</div></td></tr></table>]]></description>
+<open>1</open>
+<NetworkLink>
+  <name>Tracklog</name>
+  <visibility>1</visibility>
+  <open>1</open>
+  <refreshVisibility>1</refreshVisibility>
+  <flyToView>1</flyToView>
+  <Link>
+	<href>http://www.dhv-xc.de/xc/modules/leonardo/./data/flights/kml/2016/6356/66Orawe1.igc.kmz</href>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>UpdateColor</name>
+  <Link>
+    <href>http://www.dhv-xc.de/xc/modules/leonardo/./download.php?type=kml_trk&#38;flightID=754563&#38;c=ff0000&#38;w=2&#38;an=0&#38;updateColor=1</href>
+	</Link>
+</NetworkLink>
+<Placemark>
+  <name><![CDATA[Speikboden ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Sand in Taufers - <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=0&year=0&season=0&country=IT'>Italy</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=10136&year=0&season=0'>Flüge in der Nähe dieses Punktes anzeigen [ 2104 ]</a></td></tr><tr ><td>Fluggebietsrekord : <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=show_flight&flightID=169065'>112.1&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link für mehr Information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>11.8932</longitude>
+    <latitude>46.9137</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>11.8932,46.9137,0</coordinates>
+  </Point>
+</Placemark><Placemark>
+  <name><![CDATA[Rio Bianco ]]></name>
+  <description><![CDATA[<table cellpadding=0 cellspacing=0 width=300><tr bgcolor="#D7E1EE"><td>Region: Ahrntal - Alto Adige - <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=0&year=0&season=0&country=IT'>Italy</a></td></tr><tr bgcolor="#CCCCCC"><td><a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=list_flights&takeoffID=11508&year=0&season=0'>Flüge in der Nähe dieses Punktes anzeigen [ 9 ]</a></td></tr><tr ><td>Fluggebietsrekord : <a href='http://www.dhv-xc.de/xc/modules/leonardo/index.php?name=leonardo&op=show_flight&flightID=189404'>59.8&nbsp;km</a></td></tr><tr bgcolor="#CCCCCC"><td>Link für mehr Information : -</td></tr><tr ><td></td></tr><tr ><td></td></tr></table>	
+    ]]>
+ </description>
+  <LookAt>
+    <longitude>11.887</longitude>
+    <latitude>46.9615</latitude>
+    <range>10000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+  </LookAt>
+    
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Style>
+    <IconStyle>
+      <scale>0.8</scale>
+      <Icon>
+        <href>root://icons/palette-4.png</href>
+        <x>160</x>
+        <y>128</y>
+        <w>32</w>
+        <h>32</h>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>0.8</scale>
+    </LabelStyle>
+  </Style>
+  
+  <Point>
+    <coordinates>11.887,46.9615,0</coordinates>
+  </Point>
+</Placemark><Folder>
+		<name>XC Task</name>
+
+		<Placemark>
+		<name>XC Task</name>
+		<Style id='taskLine'>
+			<LineStyle><color>ffffffff</color></LineStyle>
+		</Style>
+		<LineString>
+			<altitudeMode>extrude</altitudeMode>
+			<coordinates>
+		11.89845,46.9144,0 11.893216666667,46.914133333333,0 11.876633333333,46.963283333333,0 11.936883333333,46.9738,0 11.927516666667,46.971783333333,0 
+		</coordinates>
+		</LineString>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>11.89845,46.9144,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>11.893216666667,46.914133333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>11.876633333333,46.963283333333,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>11.936883333333,46.9738,0</coordinates>
+		 </Point>
+		</Placemark>
+		<Placemark>
+				 <Style>
+				  <IconStyle>
+					<scale>1.0</scale>
+					<Icon>
+					  <href>http://maps.google.com/mapfiles/kml/paddle/purple-square.png</href>					 
+					</Icon>
+					<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+				  </IconStyle>
+				</Style>
+		 <Point>
+			<coordinates>11.927516666667,46.971783333333,0</coordinates>
+		 </Point>
+		</Placemark></Folder></Document>
+</kml>
