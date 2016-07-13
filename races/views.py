@@ -13,10 +13,10 @@ from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
-from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between
-from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race, write_kml_participant, write_kml_airrace
+from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between,create_competitiontaskparticipant_kml
+from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml
 from pilt.settings import BASE_DIR
-from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition
+from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition,CompetitionTaskParticipant,CompetitionTaskParticipantPosition
 from .forms import RaceForm, AirRaceForm, CompetitionForm, TaskForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
@@ -67,24 +67,112 @@ def detail_competition(request,pk):
     tasks = Task.objects.filter(competition=competition)
     return render(request, 'races/detail_competition.html', {'tasks': tasks})
 
-def detail_task(request,pk):
-    tasks = get_object_or_404(Task, pk=pk)
-    tasks = Task.objects.filter(competition=competition)
+def detail_task(request,competition,task):
+    competitiontaskparticipants = CompetitionTaskParticipant.objects.filter(task=task)
 
-    return render(request, 'races/detail_competition.html', {'tasks': tasks})
+    return render(request, 'races/detail_task.html', {'competitiontaskparticipants':competitiontaskparticipants})
+
+def create_tasks_participants(task):
+    print(BASE_DIR)
+    print(task.file)
+    print("---")
+    path=BASE_DIR+"/"+task.file.name
+    print(path)
+    print("---")
+    print(task.file.path)
+    os.system("unzip %s" % (task.file))
+
+    name=task.file.name.split('/')
+    print name
+    dirName= name[2].split('.')
+    print dirName
+    folderPath = dirName[0]
+    print folderPath
+    print ">------"
+
+    folderPath=BASE_DIR+"/"+folderPath
+
+    print folderPath
+    space=" "
+    underbar="_"
+    folderPath= folderPath.replace(underbar,space)
+    print folderPath
+    print"-----"
+
+    onlyfiles = [f for f in os.listdir(folderPath) if isfile(join(folderPath, f))]
+    for file in onlyfiles:
+        igcPath = folderPath+"/"+file
+        create_competitiontaskparticipant(igcPath, task)
+
+
+
+    print("hola")
+
+
+def create_competitiontaskparticipant(file, task):
+    lines = [line.rstrip('\n') for line in open(file)]
+    pilotName = lines[2].strip('HFPLTPILOT: ')
+    arrayCoordinates = lines[9:len(lines)-3]
+
+    print arrayCoordinates[0][0]
+    if arrayCoordinates[0][0] != "B":
+        arrayCoordinates=lines[17:len(lines)-3]
+
+    print pilotName
+
+    competitiontaskparticipant = CompetitionTaskParticipant()
+    competitiontaskparticipant.name=pilotName
+    competitiontaskparticipant.task = task
+    competitiontaskparticipant.save()
+
+    for line in arrayCoordinates:
+        timeStamp = line[1:7]
+        latDMS = line[7:15]
+        longDMS = line[15:23]
+        altitude = line[25:]
+        print latDMS
+        print longDMS
+        latDEC = convert(latDMS)
+        longDEC = convert(longDMS)
+        position = CompetitionTaskParticipantPosition()
+        position.instant = timeStamp
+        position.latitude = latDEC
+        position.longitude = longDEC
+        position.height = altitude
+        position.taskparticipant = competitiontaskparticipant
+        position.save()
+    print "hola"
+    create_competitiontaskparticipant_kml(competitiontaskparticipant)
+
+def convert(degreeCoordinate):
+    cardinalPoint = degreeCoordinate[-1:]
+    if str(cardinalPoint) == "N" or str(cardinalPoint) =="S":
+        decimalCoordinate = float(degreeCoordinate[0:2]) + float(degreeCoordinate[2:4])/60 + float(degreeCoordinate[4:7])/3600
+        if str(cardinalPoint) == "S":
+            decimalCoordinate = decimalCoordinate * -1
+    else:
+        decimalCoordinate = float(degreeCoordinate[0:3]) + float(degreeCoordinate[3:5])/60 + float(degreeCoordinate[5:8])/3600
+        if str(cardinalPoint) == "W":
+            decimalCoordinate = decimalCoordinate * -1
+    return decimalCoordinate
 
 
 def new_task(request,pk):
     form = TaskForm()
     competition = get_object_or_404(Competition, pk=pk)
-    print competition.name
     if request.method == "POST":
         form = TaskForm(request.POST, request.FILES)
         if form.is_valid():
             task = form.save(commit=False)
             task.competition = competition
             task.save()
-            return redirect('races:detail_task.hml', pk=task.pk)
+            try:
+                os.mkdir("static/kml/" + str(task.competition.pk))
+            except ValueError:
+                print "Folder created previously"
+
+            create_tasks_participants(task)
+            return redirect('races:detail_task', task=task.pk,competition=competition.pk)
     return render(request, 'races/new_task.html', {'form': form})
 
 
@@ -314,6 +402,18 @@ def air_race_send(request,race, participant):
     return HttpResponseRedirect('../..')
 
 
+def send_participant(request,competition,task,participant):
+    #filename=create_routeparticipant_kml(positions,raceparticipant)
+    participant = CompetitionTaskParticipant.objects.get(pk=participant)
+    send_single_kml(participant)
+
+    return HttpResponseRedirect('../..')
+
+
+
+
+
+
 #Serializers
 class RaceViewSet(viewsets.ModelViewSet):
     queryset=Race.objects.all()
@@ -321,7 +421,6 @@ class RaceViewSet(viewsets.ModelViewSet):
 class RaceParticipantViewSet(viewsets.ModelViewSet):
     queryset=RaceParticipant.objects.all()
     serializer_class = RaceParticipantSerializer
-    print("hola")
 class ParticipantViewSet(viewsets.ModelViewSet):
     queryset = Participant.objects.all()
     serializer_class = RaceParticipantSerializer

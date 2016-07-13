@@ -14,9 +14,9 @@ urlpatterns = [
     url(r'^competitions/$', views.competitionview, name='competition'),
     url(r'^competitions/new$', views.new_competition, name='new_competition'),
     url(r'^competitions/(?P<pk>[0-9]+)/$', views.detail_competition, name='detail_competition'),
-    url(r'^competitions/(?P<pk>[0-9]+)/task/$', views.taskview, name='task'),
-    url(r'^competitions/(?P<pk>[0-9]+)/task/new/$', views.new_task, name='task'),
-    url(r'^competitions/(?P<pk>[0-9]+)/task/(?P<pk>[0-9]+)/$', views.detail_task, name='task'),
+    url(r'^competitions/(?P<pk>[0-9]+)/task/new/$', views.new_task, name='new_task'),
+    url(r'^competitions/(?P<competition>\w+)/task/(?P<task>\w+)/$', views.detail_task, name='detail_task'),
+    url(r'^competitions/(?P<competition>\w+)/task/(?P<task>\w+)/send/(?P<participant>\w+)/$', views.send_participant, name='send_participant'),
 
     url(r'^air_races/$', views.airview, name='airrace'),
     url(r'^ground_races/$', views.groundview, name='groundrace'),

@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>FUTOOON</h1>
+ {% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+
+<h1>holaa</h1>
+<div class="row">
+
+ <div id="test1" class="col s12">
+        <h1>{{ competition.pk }}</h1>
+             <h1>{{ competition.name }}</h1>
+
+
+ </div>
+
+
+</div>
+
+       <div class="collection">
+            {% for participant in competitiontaskparticipants %}
+                <a href="{% url 'races:send_participant' participant.task.competition.pk participant.task.pk participant.pk %} " class="collection-item">{{ participant.name }}</a>
+            {% endfor %}
+      </div>
+
+
+
+{% endblock %}
