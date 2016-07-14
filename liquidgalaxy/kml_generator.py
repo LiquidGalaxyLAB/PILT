@@ -1,10 +1,16 @@
 from races.models import Participant, RaceParticipant,Position,CompetitionTaskParticipantPosition,CompetitionTaskParticipant
-import os, errno
+import os, errno, random
+
+
+
 
 
 def create_competitiontaskparticipant_kml(taskparticipant):
     positions = CompetitionTaskParticipantPosition.objects.all().filter(taskparticipant=taskparticipant)
     path="static/kml/" + str(taskparticipant.task.competition.pk) + "/" + taskparticipant.task.name
+
+    r = lambda: random.randint(0, 255)
+    color = ('#%02X%02X%02X' % (r(), r(), r()))
 
     try:
         os.makedirs(path)
@@ -20,14 +26,14 @@ def create_competitiontaskparticipant_kml(taskparticipant):
             "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
             "<kml xmlns=\"http://www.opengis.net/kml/2.2\">\n" +
             "\t<Document>\n" +
-            "\t\t<Style id=\"thickBlackLine\">\n" +
+            "\t\t<Style id=\"colorLine\">\n" +
             "\t\t\t<LineStyle>\n" +
-            "\t\t\t\t<color>ff000000</color>\n" +
+            "\t\t\t\t<color>"+color+"</color>\n" +
             "\t\t\t\t<width>20</width>\n" +
             "\t\t\t</LineStyle>\n" +
             "\t\t</Style>\n" +
             "\t\t<Placemark>\n" +
-            "\t\t\t<styleUrl>#thickBlackLine</styleUrl>\n" +
+            "\t\t\t<styleUrl>#colorLine</styleUrl>\n" +
             "\t\t\t<LineString>\n" +
             "\t\t\t\t<tessellate>1</tessellate>\n" +
             "\t\t\t\t<coordinates>\n")
@@ -135,7 +141,6 @@ def create_participant_kml(positions,raceparticipant):
             "\t</Document>\n" +
             "</kml>")
         kml_file.close()
-        print("hola")
 
 def find_between(s, first, last):
     try:

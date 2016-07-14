@@ -105,9 +105,6 @@ def write_idivt_kml():
 
 
 def send_single_kml(participant):
-    print "iouhijgh"
-    print participant.kmlpath
-
     ip_server = get_server_ip()
     os.system("touch kmls.txt")
     os.system("rm kmls.txt")
