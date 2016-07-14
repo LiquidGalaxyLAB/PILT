@@ -13,7 +13,7 @@ class Competition(models.Model):
 
 class Task(models.Model):
     name = models.CharField(max_length=100)
-    imageURL = models.CharField(max_length=100)
+    imageURL = models.CharField(max_length=300)
     file = models.FileField(upload_to='static/competitions')
     competition = models.ForeignKey(Competition, on_delete=models.CASCADE)
 

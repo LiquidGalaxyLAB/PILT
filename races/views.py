@@ -114,7 +114,6 @@ def create_competitiontaskparticipant(file, task):
     pilotName = lines[2].strip('HFPLTPILOT: ')
     arrayCoordinates = lines[9:len(lines)-3]
 
-    print arrayCoordinates[0][0]
     if arrayCoordinates[0][0] != "B":
         arrayCoordinates=lines[17:len(lines)-3]
 
@@ -129,9 +128,7 @@ def create_competitiontaskparticipant(file, task):
         timeStamp = line[1:7]
         latDMS = line[7:15]
         longDMS = line[15:23]
-        altitude = line[25:]
-        print latDMS
-        print longDMS
+        altitude = line[25:30]
         latDEC = convert(latDMS)
         longDEC = convert(longDMS)
         position = CompetitionTaskParticipantPosition()
@@ -141,7 +138,6 @@ def create_competitiontaskparticipant(file, task):
         position.height = altitude
         position.taskparticipant = competitiontaskparticipant
         position.save()
-    print "hola"
     create_competitiontaskparticipant_kml(competitiontaskparticipant)
 
 def convert(degreeCoordinate):
@@ -166,10 +162,9 @@ def new_task(request,pk):
             task = form.save(commit=False)
             task.competition = competition
             task.save()
-            try:
-                os.mkdir("static/kml/" + str(task.competition.pk))
-            except ValueError:
-                print "Folder created previously"
+
+            if not os.path.exists("static/kml/" + str(task.competition.pk)):
+                os.makedirs("static/kml/" + str(task.competition.pk))
 
             create_tasks_participants(task)
             return redirect('races:detail_task', task=task.pk,competition=competition.pk)
@@ -183,7 +178,7 @@ def new_competition(request):
         if form.is_valid():
             competition = form.save(commit=False)
             competition.save()
-            return redirect('races:detail_competition.hml', pk=competition.pk)
+            return redirect('races:detail_competition', pk=competition.pk)
     return render(request, 'races/new_competition.html', {'form': form})
 
 def new_airrace(request):
@@ -331,7 +326,6 @@ def create_participant(request):
         participant.image = imageURL
         participant.save()
         create_raceparticipant(participant,race)
-        print("it works!!!!")
         raceParticipant= RaceParticipant.objects.get(participant=participant.pk,race=race.pk)
         print(raceParticipant.pk)
         get_raceparticipant(participant, race)
@@ -345,9 +339,7 @@ def create_raceparticipant(participant,race):
     raceParticipant.save()
 
 def get_raceparticipant(participant,race):
-    print("hola")
     raceParticipant= RaceParticipant.objects.get(participant=participant,race=race)
-    print("hola")
     return raceParticipant
 
 @csrf_exempt
