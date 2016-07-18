@@ -10,7 +10,7 @@ def create_competitiontaskparticipant_kml(taskparticipant):
     path="static/kml/" + str(taskparticipant.task.competition.pk) + "/" + taskparticipant.task.name
 
     r = lambda: random.randint(0, 255)
-    color = ('#%02X%02X%02X' % (r(), r(), r()))
+    color = ('ff%02X%02X%02X' % (r(), r(), r()))
 
     try:
         os.makedirs(path)
@@ -36,6 +36,7 @@ def create_competitiontaskparticipant_kml(taskparticipant):
             "\t\t\t<styleUrl>#colorLine</styleUrl>\n" +
             "\t\t\t<LineString>\n" +
             "\t\t\t\t<tessellate>1</tessellate>\n" +
+            "\t\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n" +
             "\t\t\t\t<coordinates>\n")
         for position in positions:
             kml_file.write(

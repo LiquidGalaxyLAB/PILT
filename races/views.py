@@ -127,7 +127,7 @@ def create_competitiontaskparticipant(file, task):
     for line in arrayCoordinates:
         timeStamp = line[1:7]
         latDMS = line[7:15]
-        longDMS = line[15:23]
+        longDMS = line[15:24]
         altitude = line[25:30]
         latDEC = convert(latDMS)
         longDEC = convert(longDMS)
@@ -145,11 +145,11 @@ def convert(degreeCoordinate):
     if str(cardinalPoint) == "N" or str(cardinalPoint) =="S":
         decimalCoordinate = float(degreeCoordinate[0:2]) + float(degreeCoordinate[2:4])/60 + float(degreeCoordinate[4:7])/3600
         if str(cardinalPoint) == "S":
-            decimalCoordinate = decimalCoordinate * -1
+            decimalCoordinate = float(decimalCoordinate) * -1
     else:
         decimalCoordinate = float(degreeCoordinate[0:3]) + float(degreeCoordinate[3:5])/60 + float(degreeCoordinate[5:8])/3600
         if str(cardinalPoint) == "W":
-            decimalCoordinate = decimalCoordinate * -1
+            decimalCoordinate = float(decimalCoordinate) * -1
     return decimalCoordinate
 
 
