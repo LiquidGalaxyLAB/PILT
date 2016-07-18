@@ -80,7 +80,6 @@ def create_tasks_participants(task):
     print(path)
     print("---")
     print(task.file.path)
-    os.system("unzip %s" % (task.file))
 
     name=task.file.name.split('/')
     print name
@@ -90,7 +89,11 @@ def create_tasks_participants(task):
     print folderPath
     print ">------"
 
+
     folderPath=BASE_DIR+"/"+folderPath
+    os.mkdir(folderPath)
+
+    os.system("unzip %s -d %s" % (task.file, folderPath))
 
     print folderPath
     space=" "
@@ -111,14 +114,31 @@ def create_tasks_participants(task):
 
 def create_competitiontaskparticipant(file, task):
     lines = [line.rstrip('\n') for line in open(file)]
-    pilotName = lines[2].strip('HFPLTPILOT: ')
-    arrayCoordinates = lines[9:len(lines)-3]
+    substring= "HFPLTPILOT"
 
-    if arrayCoordinates[0][0] != "B":
-        arrayCoordinates=lines[17:len(lines)-3]
+    valor = substring in lines[2]
+    if valor:
+        pilotName = lines[2].strip('HFPLTPILOT: ')
+    else:
+        pilotName = lines[3].strip('HFPLTPILOTINCHARGE: ')
+
 
     print pilotName
+    arrayCoordinates = lines[9:len(lines)-3]
 
+    index = 0
+    print "muahahahahahhaha"
+    for i,line in enumerate(lines):
+        print i, line
+        print line[0]
+        if line[0][0] == 'B':
+            print i
+            print "hola"
+            arrayCoordinates=lines[i:len(lines)-3]
+            break
+
+
+    print "FUTOOOON"
     competitiontaskparticipant = CompetitionTaskParticipant()
     competitiontaskparticipant.name=pilotName
     competitiontaskparticipant.task = task
@@ -138,6 +158,7 @@ def create_competitiontaskparticipant(file, task):
         position.height = altitude
         position.taskparticipant = competitiontaskparticipant
         position.save()
+    print competitiontaskparticipant.name
     create_competitiontaskparticipant_kml(competitiontaskparticipant)
 
 def convert(degreeCoordinate):
@@ -191,7 +212,6 @@ def new_airrace(request):
             get_air_participants(race)
             return redirect('races:air_detail_race', pk=race.pk)
     return render(request, 'races/new_airrace.html', {'form': form})
-
 
 
 def get_air_participants(race):
