@@ -2,18 +2,7 @@
 
 {% block content %}
 
-<h1>holaa</h1>
-<div class="row">
-
- <div id="test1" class="col s12">
-        <h1>{{ competition.pk }}</h1>
-             <h1>{{ competition.name }}</h1>
-
-
- </div>
-
-
-</div>
+<h1>{{competitiontaskparticipants.0.task.name}}</h1>
 
        <div class="collection">
             {% for participant in competitiontaskparticipants %}

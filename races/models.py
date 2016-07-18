@@ -11,17 +11,25 @@ class Competition(models.Model):
     name=models.CharField(max_length=100)
     imageURL=models.CharField(max_length=100)
 
+    def __unicode__(self):
+        return str(self.name)
+
 class Task(models.Model):
     name = models.CharField(max_length=100)
     imageURL = models.CharField(max_length=300)
     file = models.FileField(upload_to='static/competitions')
     competition = models.ForeignKey(Competition, on_delete=models.CASCADE)
 
+    def __unicode__(self):
+        return str(self.name)
+
 
 class CompetitionTaskParticipant(models.Model):
     task = models.ForeignKey(Task, on_delete=models.CASCADE )
     kmlpath = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
+    def __unicode__(self):
+        return str(self.kmlpath)
 
 class CompetitionTaskParticipantPosition(models.Model):
     instant = models.IntegerField(default=0)
