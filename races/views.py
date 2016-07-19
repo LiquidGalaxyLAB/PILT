@@ -122,23 +122,16 @@ def create_competitiontaskparticipant(file, task):
     else:
         pilotName = lines[3].strip('HFPLTPILOTINCHARGE: ')
 
-
     print pilotName
     arrayCoordinates = lines[9:len(lines)-3]
 
     index = 0
-    print "muahahahahahhaha"
     for i,line in enumerate(lines):
-        print i, line
-        print line[0]
         if line[0][0] == 'B':
-            print i
-            print "hola"
-            arrayCoordinates=lines[i:len(lines)-3]
+            arrayCoordinates=lines[i:len(lines)-4]
             break
 
 
-    print "FUTOOOON"
     competitiontaskparticipant = CompetitionTaskParticipant()
     competitiontaskparticipant.name=pilotName
     competitiontaskparticipant.task = task
@@ -163,12 +156,24 @@ def create_competitiontaskparticipant(file, task):
 
 def convert(degreeCoordinate):
     cardinalPoint = degreeCoordinate[-1:]
+
+
     if str(cardinalPoint) == "N" or str(cardinalPoint) =="S":
-        decimalCoordinate = float(degreeCoordinate[0:2]) + float(degreeCoordinate[2:4])/60 + float(degreeCoordinate[4:7])/3600
+        integerPart = degreeCoordinate[2:4]
+        decimalPart = degreeCoordinate[4:7]
+        minutes=integerPart+"."+decimalPart
+        print minutes
+        decimalCoordinate = float(degreeCoordinate[0:2]) + float(minutes)/60
         if str(cardinalPoint) == "S":
             decimalCoordinate = float(decimalCoordinate) * -1
     else:
-        decimalCoordinate = float(degreeCoordinate[0:3]) + float(degreeCoordinate[3:5])/60 + float(degreeCoordinate[5:8])/3600
+
+        integerPart = degreeCoordinate[3:5]
+        decimalPart = degreeCoordinate[5:8]
+        minutes = integerPart + "." + decimalPart
+        print minutes
+
+        decimalCoordinate = float(degreeCoordinate[0:3]) + float(minutes)/60
         if str(cardinalPoint) == "W":
             decimalCoordinate = float(decimalCoordinate) * -1
     return decimalCoordinate
