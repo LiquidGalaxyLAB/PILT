@@ -18,6 +18,8 @@ urlpatterns = [
     url(r'^competitions/(?P<pk>[0-9]+)/task/new/$', views.new_task, name='new_task'),
     url(r'^competitions/(?P<competition>\w+)/task/(?P<task>\w+)/$', views.detail_task, name='detail_task'),
     url(r'^competitions/(?P<competition>\w+)/task/(?P<task>\w+)/send/(?P<participant>\w+)/$', views.send_participant, name='send_participant'),
+    url(r'^competitions/delete_competition/(?P<pk>\w+)/$', views.delete_competition),
+    url(r'^competitions/(?P<competition>\w+)/task/delete_task/(?P<task>\w+)/$', views.delete_task),
 
     url(r'^air_races/$', views.airview, name='airrace'),
     url(r'^ground_races/$', views.groundview, name='groundrace'),
