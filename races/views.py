@@ -107,7 +107,9 @@ def create_tasks_participants(task):
         igcPath = folderPath+"/"+file
         create_competitiontaskparticipant(igcPath, task)
 
-
+    print folderPath
+    os.system("rm -R %s" % (folderPath))
+    os.system("rm -R %s" % (path))
 
     print("hola")
 
@@ -162,7 +164,6 @@ def convert(degreeCoordinate):
         integerPart = degreeCoordinate[2:4]
         decimalPart = degreeCoordinate[4:7]
         minutes=integerPart+"."+decimalPart
-        print minutes
         decimalCoordinate = float(degreeCoordinate[0:2]) + float(minutes)/60
         if str(cardinalPoint) == "S":
             decimalCoordinate = float(decimalCoordinate) * -1
@@ -171,7 +172,6 @@ def convert(degreeCoordinate):
         integerPart = degreeCoordinate[3:5]
         decimalPart = degreeCoordinate[5:8]
         minutes = integerPart + "." + decimalPart
-        print minutes
 
         decimalCoordinate = float(degreeCoordinate[0:3]) + float(minutes)/60
         if str(cardinalPoint) == "W":
@@ -289,6 +289,21 @@ def get_all_raceparticipants(race):
 
 
 #CRUD operations
+def delete_task(request,competition,task):
+    print "hola"
+    task=Task.objects.get(pk=task)
+    task.delete()
+    return HttpResponseRedirect('/competitions/'+competition)
+
+
+
+def delete_competition(request,pk):
+    competition=Competition.objects.get(pk=pk)
+    competition.delete()
+    return HttpResponseRedirect('/competitions')
+
+
+
 def delete_airrace(request,pk):
     race=AirRace.objects.get(pk=pk)
     baseFilePath = BASE_DIR + "/static/airraces/" + str(race.pk)
@@ -296,6 +311,8 @@ def delete_airrace(request,pk):
     race.delete()
     os.system("rm -R %s" % (baseFilePath))
     return HttpResponseRedirect('/air_races')
+
+
 def delete_race(request,pk):
     race=Race.objects.get(pk=pk)
     url_destination = race.type
