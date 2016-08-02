@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_1">
+        <Style id="stylesel_0">
+            <LineStyle id="substyle_0">
+                <color>ff00008b</color>
+                <colorMode>normal</colorMode>
+                <width>6</width>
+            </LineStyle>
+        </Style>
+        <name>IBRI5R9</name>
+        <Placemark id="feat_2">
+            <name>Base</name>
+            <Point id="geom_0">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_3">
+            <name>Route 0</name>
+            <styleUrl>#stylesel_0</styleUrl>
+            <LineString id="geom_1">
+                <coordinates>-16.3104641,28.479013,0.0 -16.3099531,28.479013,0.0 -16.3094421,28.479013,0.0 -16.3089311,28.479013,0.0 -16.3084201,28.479013,0.0 -16.3089311,28.4785638,0.0 -16.3094421,28.4785638,0.0 -16.3099531,28.4785638,0.0 -16.3104641,28.4785638,0.0 -16.3104641,28.4781147,0.0 -16.3099531,28.4781147,0.0 -16.3094421,28.4781147,0.0 -16.3089311,28.4781147,0.0 -16.3084201,28.4785638,0.0 -16.3084201,28.4781147,0.0 -16.3089311,28.4776655,0.0 -16.3094421,28.4776655,0.0 -16.3099531,28.4776655,0.0 -16.3104641,28.4776655,0.0 -16.3104641,28.4772164,0.0 -16.3099531,28.4772164,0.0 -16.3094421,28.4772164,0.0 -16.3089311,28.4772164,0.0 -16.3084201,28.4776655,0.0 -16.3084201,28.4772164,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="feat_4">
+            <name>Back to base</name>
+            <Point id="geom_2">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
