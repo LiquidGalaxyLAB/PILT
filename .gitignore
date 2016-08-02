@@ -1,2 +1,5 @@
 *.pyc
 /static/idivt/imagenes/*
+/documents
+/static/kml/*
+db.sqlite3
