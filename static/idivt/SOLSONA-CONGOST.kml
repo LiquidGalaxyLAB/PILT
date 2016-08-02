@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+    <Style id="Style_5">
+      <IconStyle>
+        <scale>0.4</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <color>9900ffff</color>
+        <scale>1</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>990000ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>997f7fff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
     <Style id="tower">
         <IconStyle>
             <scale>2.0</scale>
@@ -29,6 +51,7 @@
 		</Pair>
 	</StyleMap>			
 	<Folder>
+
 		<name>SOLSONA - CONGOST 110KV</name>
 		<visibility>1</visibility>
 			<styleUrl>#tower</styleUrl>
@@ -777,6 +800,31 @@
 				<coordinates>1.672510273285819,41.85842191776529,0</coordinates>
 			</Point>
 		</Placemark>
+		<Placemark id="pm251">
+      <styleUrl>#Style_5</styleUrl>
+      <MultiGeometry>
+
+        <MultiGeometry>
+          <Polygon id="g867">
+            <altitudeMode>clampToGround</altitudeMode>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>
+                    1.6725,41.8584
+                    1.6725,41.8585
+                    1.6726,41.8585
+                    1.6726,41.8584
+                    1.6725,41.8584
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </MultiGeometry>
+    </Placemark>
+
+
+
         <ScreenOverlay id="Lockheed Martin">
             <name>1_Lockheed_Martin.png</name>
             <visibility>1</visibility>
@@ -784,10 +832,10 @@
             <Icon>imagenes/247400001610.1/247400001610.1.jpg</Icon>
             <Region id="Region_Lockheed">
                 <LatLonAltBox>
-                    <north>41.85942</north>
-                    <south>41.85742</south>
-                    <east>1.672510273285819</east>
-                    <west>1.672510273285819</west>
+                    <north>41.85852</north>
+                    <south>41.85832</south>
+                    <east>1.67251</east>
+                    <west>1.67251</west>
                 </LatLonAltBox>
                 <Lod>
                     <minLodPixels>700</minLodPixels>
@@ -933,7 +981,7 @@
             <description>Title</description>
             <Icon>imagenes/247400001630.3/247400001630.3.jpg</Icon>
             <Region id="Region_Lockheed">
-                <LatLonAltBox>
+               <LatLonAltBox>
                     <north>41.85497</north>
                     <south>41.85297</south>
                     <east>1.67699</east>
@@ -996,6 +1044,35 @@
 				<coordinates>1.68076,41.85028,0</coordinates>
 			</Point>
 		</Placemark>
+
+
+		<ScreenOverlay id="Lockheed Martin">
+            <name>1_Lockheed_Martin.png</name>
+            <visibility>1</visibility>
+            <description>Title</description>
+            <Icon>imagenes/247400001650.1/247400001650.1.jpg</Icon>
+            <Region id="Region_Lockheed">
+                <LatLonAltBox>
+                    <north>41.85128</north>
+                    <south>41.84928</south>
+                    <east>1.68076</east>
+                    <west>1.68076</west>
+                </LatLonAltBox>
+                <Lod>
+                    <minLodPixels>900</minLodPixels>
+                    <maxLodPixels>-1</maxLodPixels>
+                    <minFadeExtent>0</minFadeExtent>
+                    <maxFadeExtent>0</maxFadeExtent>
+                </Lod>
+            </Region>
+            <overlayXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.8" y="0.81" xunits="fraction" yunits="fraction"/>
+            <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
+            <rotation>0</rotation>
+        </ScreenOverlay>
+
+
+
 		<Placemark>
 			<name>SOLSONA - CONGOST 110KV 247400001660</name>
 			<visibility>1</visibility>
@@ -1064,6 +1141,33 @@
 				<coordinates>1.68905,41.84155,0</coordinates>
 			</Point>
 		</Placemark>
+
+		<ScreenOverlay id="Lockheed Martin">
+            <name>1_Lockheed_Martin.png</name>
+            <visibility>1</visibility>
+            <description>Title</description>
+            <Icon>imagenes/247400001670.1/247400001670.1.jpg</Icon>
+            <Region id="Region_Lockheed">
+                <LatLonAltBox>
+                    <north>41.84255</north>
+                    <south>41.84055</south>
+                    <east>1.68905</east>
+                    <west>1.68905</west>
+                </LatLonAltBox>
+                <Lod>
+                    <minLodPixels>900</minLodPixels>
+                    <maxLodPixels>-1</maxLodPixels>
+                    <minFadeExtent>0</minFadeExtent>
+                    <maxFadeExtent>0</maxFadeExtent>
+                </Lod>
+            </Region>
+            <overlayXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.8" y="0.81" xunits="fraction" yunits="fraction"/>
+            <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
+            <rotation>0</rotation>
+        </ScreenOverlay>
+
+
 		<Placemark>
 			<name>SOLSONA - CONGOST 110KV 247400001680</name>
 			<visibility>1</visibility>
@@ -1072,6 +1176,7 @@
 				<coordinates>1.69055,41.83999,0</coordinates>
 			</Point>
 		</Placemark>
+
 
 		        <ScreenOverlay id="Lockheed Martin">
             <name>1_Lockheed_Martin.png</name>
@@ -1103,7 +1208,7 @@
             <description>Title</description>
             <Icon>imagenes/247400001680.2/247400001680.2.jpg</Icon>
             <Region id="Region_Lockheed">
-               <LatLonAltBox>
+                <LatLonAltBox>
                     <north>41.84099</north>
                     <south>41.83899</south>
                     <east>1.69055</east>
@@ -1143,6 +1248,63 @@
 				<coordinates>1.69156,41.83894,0</coordinates>
 			</Point>
 		</Placemark>
+
+
+
+		        <ScreenOverlay id="Lockheed Martin">
+            <name>1_Lockheed_Martin.png</name>
+            <visibility>1</visibility>
+            <description>Title</description>
+            <Icon>imagenes/247400001690.1/247400001690.1.jpg</Icon>
+            <Region id="Region_Lockheed">
+                <LatLonAltBox>
+                    <north>41.83994</north>
+                    <south>41.83794</south>
+                    <east>1.69156</east>
+                    <west>1.69156</west>
+                </LatLonAltBox>
+                <Lod>
+                    <minLodPixels>800</minLodPixels>
+                    <maxLodPixels>-1</maxLodPixels>
+                    <minFadeExtent>0</minFadeExtent>
+                    <maxFadeExtent>0</maxFadeExtent>
+                </Lod>
+            </Region>
+            <overlayXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.8" y="0.81" xunits="fraction" yunits="fraction"/>
+            <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
+            <rotation>0</rotation>
+        </ScreenOverlay>
+        <ScreenOverlay id="Lockheed Martin">
+            <name>1_Lockheed_Martin.png</name>
+            <visibility>1</visibility>
+            <description>Title</description>
+            <Icon>imagenes/247400001690.2/247400001690.2.jpg</Icon>
+            <Region id="Region_Lockheed">
+                <LatLonAltBox>
+                     <north>41.83994</north>
+                    <south>41.83794</south>
+                    <east>1.69156</east>
+                    <west>1.69156</west>
+                </LatLonAltBox>
+                <Lod>
+                    <minLodPixels>900</minLodPixels>
+                    <maxLodPixels>-1</maxLodPixels>
+                    <minFadeExtent>0</minFadeExtent>
+                    <maxFadeExtent>0</maxFadeExtent>
+                </Lod>
+            </Region>
+            <overlayXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.8" y="0.50" xunits="fraction" yunits="fraction"/>
+            <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
+            <rotation>0</rotation>
+        </ScreenOverlay>
+
+
+
+
+
+
 		<Placemark>
 			<name>SOLSONA - CONGOST 110KV 247400001700</name>
 			<visibility>1</visibility>
