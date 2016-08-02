@@ -32,6 +32,15 @@ def create_competitiontaskparticipant_kml(taskparticipant):
             "\t\t\t\t<width>20</width>\n" +
             "\t\t\t</LineStyle>\n" +
             "\t\t</Style>\n" +
+            "\t\t<LookAt>\n" +
+            "\t\t\t<longitude>"+positions[0].longitude+"</longitude>\n" +
+            "\t\t\t<latitude>"+positions[0].latitude+"</latitude>\n" +
+            "\t\t\t<altitude>0</altitude>\n" +
+            "\t\t\t<heading>0</heading>\n" +
+            "\t\t\t<tilt>30</tilt>\n" +
+            "\t\t\t<range>3000</range>\n" +
+            "\t\t\t<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>\n" +
+            "\t\t</LookAt>\n" +
             "\t\t<Placemark>\n" +
             "\t\t\t<styleUrl>#colorLine</styleUrl>\n" +
             "\t\t\t<LineString>\n" +
