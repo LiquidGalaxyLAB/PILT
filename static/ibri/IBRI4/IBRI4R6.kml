@@ -1,209 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
     <Document id="feat_1">
-        <name>IBRI309R670</name>
+        <name>IBRI4R6</name>
         <Placemark id="feat_2">
             <name>Base</name>
             <Point id="geom_0">
-                <coordinates>-16.2999196351,28.5164285552,0.0</coordinates>
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_3">
             <name>Point 0</name>
             <Point id="geom_1">
-                <coordinates>-16.3084148,28.5227526,0.0</coordinates>
+                <coordinates>-16.3148895,28.4873616,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_4">
             <name>Point 1</name>
             <Point id="geom_2">
-                <coordinates>-16.309335,28.5235612,0.0</coordinates>
+                <coordinates>-16.3148895,28.4887629,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_5">
             <name>Point 2</name>
             <Point id="geom_3">
-                <coordinates>-16.3102552,28.5243697,0.0</coordinates>
+                <coordinates>-16.3148895,28.4901643,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_6">
             <name>Point 3</name>
             <Point id="geom_4">
-                <coordinates>-16.3111753,28.5251783,0.0</coordinates>
+                <coordinates>-16.3148895,28.4915657,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_7">
             <name>Point 4</name>
             <Point id="geom_5">
-                <coordinates>-16.3120955,28.5251783,0.0</coordinates>
+                <coordinates>-16.3148895,28.492967,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_8">
             <name>Point 5</name>
             <Point id="geom_6">
-                <coordinates>-16.3130157,28.5251783,0.0</coordinates>
+                <coordinates>-16.3148895,28.4943684,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_9">
             <name>Point 6</name>
             <Point id="geom_7">
-                <coordinates>-16.3139359,28.5251783,0.0</coordinates>
+                <coordinates>-16.3148895,28.4957698,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_10">
             <name>Point 7</name>
             <Point id="geom_8">
-                <coordinates>-16.3148561,28.5251783,0.0</coordinates>
+                <coordinates>-16.3148895,28.4971712,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_11">
             <name>Point 8</name>
             <Point id="geom_9">
-                <coordinates>-16.3148561,28.5243698,0.0</coordinates>
+                <coordinates>-16.3148895,28.4985725,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_12">
             <name>Point 9</name>
             <Point id="geom_10">
-                <coordinates>-16.3139359,28.5243698,0.0</coordinates>
+                <coordinates>-16.3148895,28.4999739,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_13">
             <name>Point 10</name>
             <Point id="geom_11">
-                <coordinates>-16.3130157,28.5243698,0.0</coordinates>
+                <coordinates>-16.3132949,28.4999739,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_14">
             <name>Point 11</name>
             <Point id="geom_12">
-                <coordinates>-16.3120955,28.5243698,0.0</coordinates>
+                <coordinates>-16.3132949,28.4985725,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_15">
             <name>Point 12</name>
             <Point id="geom_13">
-                <coordinates>-16.3111753,28.5243698,0.0</coordinates>
+                <coordinates>-16.3132949,28.4971712,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_16">
             <name>Point 13</name>
             <Point id="geom_14">
-                <coordinates>-16.3102552,28.5251782,0.0</coordinates>
+                <coordinates>-16.3132949,28.4957698,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_17">
             <name>Point 14</name>
             <Point id="geom_15">
-                <coordinates>-16.309335,28.5251782,0.0</coordinates>
+                <coordinates>-16.3132949,28.4943684,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_18">
             <name>Point 15</name>
             <Point id="geom_16">
-                <coordinates>-16.3084148,28.5251781,0.0</coordinates>
+                <coordinates>-16.3132949,28.492967,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_19">
             <name>Point 16</name>
             <Point id="geom_17">
-                <coordinates>-16.309335,28.5243697,0.0</coordinates>
+                <coordinates>-16.3132949,28.4915657,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_20">
             <name>Point 17</name>
             <Point id="geom_18">
-                <coordinates>-16.3084148,28.5243696,0.0</coordinates>
+                <coordinates>-16.3132949,28.4901643,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_21">
             <name>Point 18</name>
             <Point id="geom_19">
-                <coordinates>-16.3084148,28.5235611,0.0</coordinates>
+                <coordinates>-16.3132949,28.4887629,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_22">
             <name>Point 19</name>
             <Point id="geom_20">
-                <coordinates>-16.309335,28.5227527,0.0</coordinates>
+                <coordinates>-16.3132949,28.4873616,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_23">
             <name>Point 20</name>
             <Point id="geom_21">
-                <coordinates>-16.3102552,28.5235612,0.0</coordinates>
+                <coordinates>-16.3117003,28.4887629,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_24">
             <name>Point 21</name>
             <Point id="geom_22">
-                <coordinates>-16.3111753,28.5235613,0.0</coordinates>
+                <coordinates>-16.3117003,28.4901643,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_25">
             <name>Point 22</name>
             <Point id="geom_23">
-                <coordinates>-16.3120955,28.5235613,0.0</coordinates>
+                <coordinates>-16.3117003,28.4915657,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_26">
             <name>Point 23</name>
             <Point id="geom_24">
-                <coordinates>-16.3130157,28.5235613,0.0</coordinates>
+                <coordinates>-16.3117003,28.492967,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_27">
             <name>Point 24</name>
             <Point id="geom_25">
-                <coordinates>-16.3139359,28.5235613,0.0</coordinates>
+                <coordinates>-16.3117003,28.4943684,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_28">
             <name>Point 25</name>
             <Point id="geom_26">
-                <coordinates>-16.3148561,28.5235613,0.0</coordinates>
+                <coordinates>-16.3117003,28.4957698,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_29">
             <name>Point 26</name>
             <Point id="geom_27">
-                <coordinates>-16.3148561,28.5227528,0.0</coordinates>
+                <coordinates>-16.3117003,28.4971712,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_30">
             <name>Point 27</name>
             <Point id="geom_28">
-                <coordinates>-16.3139359,28.5227528,0.0</coordinates>
+                <coordinates>-16.3117003,28.4985725,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_31">
             <name>Point 28</name>
             <Point id="geom_29">
-                <coordinates>-16.3130157,28.5227528,0.0</coordinates>
+                <coordinates>-16.3117003,28.4999739,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_32">
             <name>Point 29</name>
             <Point id="geom_30">
-                <coordinates>-16.3120955,28.5227528,0.0</coordinates>
+                <coordinates>-16.3101057,28.4999738,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_33">
             <name>Point 30</name>
             <Point id="geom_31">
-                <coordinates>-16.3111753,28.5227528,0.0</coordinates>
+                <coordinates>-16.3101057,28.4985724,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_34">
             <name>Point 31</name>
             <Point id="geom_32">
-                <coordinates>-16.3102552,28.5227527,0.0</coordinates>
+                <coordinates>-16.3101057,28.4971711,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="feat_35">
-            <name>Vuelta a base</name>
+            <name>Point 32</name>
             <Point id="geom_33">
-                <coordinates>-16.2999196351,28.5164285552,0.0</coordinates>
+                <coordinates>-16.3101057,28.4957697,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_36">
+            <name>Point 33</name>
+            <Point id="geom_34">
+                <coordinates>-16.3117003,28.4873616,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_37">
+            <name>Back to base</name>
+            <Point id="geom_35">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
             </Point>
         </Placemark>
     </Document>

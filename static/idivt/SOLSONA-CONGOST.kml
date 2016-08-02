@@ -829,7 +829,7 @@
             <name>1_Lockheed_Martin.png</name>
             <visibility>1</visibility>
             <description>Title</description>
-            <Icon>http://10.160.100.200:8000/static/idivt/imagenes/247400001610.1/247400001610.1.jpg</Icon>
+            <Icon>imagenes/247400001610.1/247400001610.1.jpg</Icon>
             <Region id="Region_Lockheed">
                 <LatLonAltBox>
                     <north>41.85852</north>
@@ -995,7 +995,7 @@
                 </Lod>
             </Region>
             <overlayXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-            <screenXY x="0.8" y="0.50" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.8" y="0.19" xunits="fraction" yunits="fraction"/>
             <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
             <rotation>0</rotation>
         </ScreenOverlay>
@@ -1178,7 +1178,6 @@
 		</Placemark>
 
 
-
 		        <ScreenOverlay id="Lockheed Martin">
             <name>1_Lockheed_Martin.png</name>
             <visibility>1</visibility>
@@ -1227,6 +1226,12 @@
             <size x="0.3" y="0.3" xunits="fraction" yunits="fraction"/>
             <rotation>0</rotation>
         </ScreenOverlay>
+
+
+
+
+
+
 
 
 
