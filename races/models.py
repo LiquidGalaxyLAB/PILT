@@ -28,6 +28,8 @@ class CompetitionTaskParticipant(models.Model):
     task = models.ForeignKey(Task, on_delete=models.CASCADE )
     kmlpath = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
+    visibility = models.BooleanField(default=False)
+
     def __unicode__(self):
         return str(self.kmlpath)
 
