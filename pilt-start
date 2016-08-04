@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Escritorio/LG Lab/GSOC 2016/PILT
+cd /home/lg/Desktop/lglab/gsoc16/PILT
 source ~/.virtualenvs/pilt/bin/activate
-python manage.py 10.160.101.41 runserver 0.0.0.0:8000 --noreload
+python manage.py $1 runserver 0.0.0.0:8000 --noreload
 

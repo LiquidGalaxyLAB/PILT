@@ -107,3 +107,14 @@ def send_kml_to_galaxy():
     print("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
     os.system("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
     #os.system("sshpass -p 'lqgalaxy' scp -vvv kmls.txt lg@10.160.101.85:/var/www/html")
+
+
+
+def get_server_ip():
+    p = subprocess.Popen(
+        "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        #"ifconfig eno1 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        shell=True,
+        stdout=subprocess.PIPE)
+    ip_server = p.communicate()[0]
+    return ip_server
