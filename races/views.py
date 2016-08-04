@@ -30,43 +30,31 @@ from .serializers import RaceSerializer,RaceParticipantSerializer, UserSerialize
 def competitionview(request):
     competitions = Competition.objects.all()
     return render(request,'races/competition.html', {'competitions':competitions})
-
-
 def airview(request):
     race = AirRace()
     races = AirRace.objects.all()
     return render(request,'races/air_race.html', {'races':races})
-
 def groundview(request):
     race=Race()
     races=Race.objects.all().filter(type=0)
     return render(request,'races/ground_race.html',{'races':races})
-
-
 def taskview(request,pk):
     competition = Competition.objects.get(pk=pk)
     tasks = Task.objects.filter(competition=competition)
     return render(request,'races/task.html',{'tasks':tasks})
 
-
-
 def detail_airrace(request,pk):
     airrace = AirRace.objects.get(pk=pk)
     airparticipants = AirRaceParticipant.objects.filter(airrace=airrace)
     return render(request, 'races/detail_airrace.html', {'airrace': airrace, 'participants':airparticipants})
-
-
 def detail_race(request,pk):
     race = get_object_or_404(Race, pk=pk)
     participants = get_all_raceparticipants(race)
     return render(request, 'races/detail_race.html', {'race': race, 'participants':participants})
-
-
 def detail_competition(request,pk):
     competition = get_object_or_404(Competition, pk=pk)
     tasks = Task.objects.filter(competition=competition)
     return render(request, 'races/detail_competition.html', {'tasks': tasks})
-
 def detail_task(request,competition,task):
     competitiontaskparticipants = CompetitionTaskParticipant.objects.filter(task=task)
 
@@ -112,8 +100,6 @@ def create_tasks_participants(task):
     os.system("rm -R %s" % (path))
 
     print("hola")
-
-
 def create_competitiontaskparticipant(file, task):
     lines = [line.rstrip('\n') for line in open(file)]
     substring= "HFPLTPILOT"
@@ -155,7 +141,6 @@ def create_competitiontaskparticipant(file, task):
         position.save()
     print competitiontaskparticipant.name
     create_competitiontaskparticipant_kml(competitiontaskparticipant)
-
 def convert(degreeCoordinate):
     cardinalPoint = degreeCoordinate[-1:]
 
@@ -177,8 +162,6 @@ def convert(degreeCoordinate):
         if str(cardinalPoint) == "W":
             decimalCoordinate = float(decimalCoordinate) * -1
     return decimalCoordinate
-
-
 def new_task(request,pk):
     form = TaskForm()
     competition = get_object_or_404(Competition, pk=pk)
@@ -195,8 +178,6 @@ def new_task(request,pk):
             create_tasks_participants(task)
             return redirect('races:detail_task', task=task.pk,competition=competition.pk)
     return render(request, 'races/new_task.html', {'form': form})
-
-
 def new_competition(request):
     form = CompetitionForm()
     if request.method == "POST":
@@ -206,7 +187,6 @@ def new_competition(request):
             competition.save()
             return redirect('races:detail_competition', pk=competition.pk)
     return render(request, 'races/new_competition.html', {'form': form})
-
 def new_airrace(request):
     form = AirRaceForm()
     if request.method == "POST":
@@ -217,8 +197,6 @@ def new_airrace(request):
             get_air_participants(race)
             return redirect('races:air_detail_race', pk=race.pk)
     return render(request, 'races/new_airrace.html', {'form': form})
-
-
 def get_air_participants(race):
     onlyfiles = [f for f in os.listdir(race.folderPath) if isfile(join(race.folderPath, f))]
     raceFolderPath= "static/airraces/"+str(race.pk)
@@ -240,9 +218,6 @@ def get_air_participants(race):
         air_race_participant.save()
 
     return HttpResponseRedirect('/air_race')
-
-
-
 def extract_information_kml(kmlPath):
     import re  # Import the regex module.
     err_occur = []  # The list where we will store results.
@@ -294,16 +269,10 @@ def delete_task(request,competition,task):
     task=Task.objects.get(pk=task)
     task.delete()
     return HttpResponseRedirect('/competitions/'+competition)
-
-
-
 def delete_competition(request,pk):
     competition=Competition.objects.get(pk=pk)
     competition.delete()
     return HttpResponseRedirect('/competitions')
-
-
-
 def delete_airrace(request,pk):
     race=AirRace.objects.get(pk=pk)
     baseFilePath = BASE_DIR + "/static/airraces/" + str(race.pk)
@@ -311,8 +280,6 @@ def delete_airrace(request,pk):
     race.delete()
     os.system("rm -R %s" % (baseFilePath))
     return HttpResponseRedirect('/air_races')
-
-
 def delete_race(request,pk):
     race=Race.objects.get(pk=pk)
     url_destination = race.type
@@ -372,14 +339,11 @@ def create_participant(request):
         print(raceParticipant.pk)
         get_raceparticipant(participant, race)
     return HttpResponseRedirect('/')
-
-
 def create_raceparticipant(participant,race):
     raceParticipant = RaceParticipant()
     raceParticipant.participant = participant
     raceParticipant.race = race
     raceParticipant.save()
-
 def get_raceparticipant(participant,race):
     raceParticipant= RaceParticipant.objects.get(participant=participant,race=race)
     return raceParticipant
@@ -443,6 +407,9 @@ def send_participant(request,competition,task,participant):
 
     return HttpResponseRedirect('../..')
 
+
+def send_participants(request,competition,task,participant):
+    participants = CompetitionTaskParticipant.objects.filter(visibility=False)
 
 
 

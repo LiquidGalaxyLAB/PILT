@@ -112,8 +112,45 @@ def create_routeparticipant_kml(positions,raceparticipant):
         kml_file.close()
         return filename
 
+def rotation_kml(taskparticipant):
+    positions = CompetitionTaskParticipantPosition.objects.all().filter(taskparticipant=taskparticipant)
+    middlePosition = positions[len(positions)/2]
+
+    path = "static/kml/" + str(taskparticipant.task.competition.pk) + "/" + taskparticipant.task.name
 
 
+
+    try:
+        os.makedirs(path)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+    filename = "static/kml/rotation.kml"
+
+    os.system("touch %s" % (filename))
+
+    with open(filename, "w") as kml_file:
+        kml_file.write(
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+            "<kml xmlns=\"http://www.opengis.net/kml/2.2\" xmlns:gx=\"http://www.google.com/kml/ext/2.2\">>\n" +
+            "\t<gx:Tour>\n" +
+            "\t\t<name>Rotation tour>\n" +
+            "\t\t<gx:Playlist>\n")
+        for grades in range(0,360,11.25):
+            kml_file.write("\t\t\t<LookAt>\n" +
+                           "\t\t\t\t<longitude>"+ middlePosition.longitude +"</longitude>\n" +
+                           "\t\t\t\t<latitude>"+ middlePosition.latitude +"</latitude>\n" +
+                           "\t\t\t\t<altitude>0</altitude>\n" +
+                           "\t\t\t\t<heading>"+grades+"</heading>\n" +
+                           "\t\t\t\t<range>15000</range>\n" +
+                           "\t\t\t\t<tilt>55</tilt>\n" +
+                           "\t\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n" +
+                           "\t\t\t</LookAt>\n")
+        kml_file.write(
+            "\t\t</gx:Playlist>\n" +
+            "\t</gx:Tour>\n")
+        kml_file.close()
+        return filename
 
 
 def create_participant_kml(positions,raceparticipant):
