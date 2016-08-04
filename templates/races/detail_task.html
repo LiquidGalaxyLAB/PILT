@@ -28,8 +28,8 @@
                     <li class="collection-item">
                         <div>{{ participant.name }} - {{ participant.visibility }} -
                             <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
-                            <a href="#!" class="secondary-content"><i class="material-icons">autorenew</i></a>
                             {% if participant.visibility %}
+                                <a href="{% url 'races:rotate_galaxy' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons">autorenew</i></a>
                                 <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:green">visibility</i></a>
                             {% else %}
                                 <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:red">visibility</i></a>

@@ -383,6 +383,7 @@ def create_raceposition(request):
 def get_racepositions(raceparticipant):
     positions = Position.objects.filter(raceparticipant=raceparticipant)
     return positions
+
 def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
@@ -393,6 +394,7 @@ def ground_race_send(request,race, participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     write_kml_race()
     return HttpResponseRedirect('/ground_races')
+
 def air_race_send(request,race, participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = AirRaceParticipant.objects.get(pk=participant)
@@ -410,6 +412,10 @@ def send_participant(request,competition,task,participant):
     return HttpResponseRedirect('../..')
 
 
+
+
+
+
 def send_participants(request,competition,task,participant):
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
 
@@ -425,6 +431,17 @@ def send_participants(request,competition,task,participant):
     create_kmlstxt(competitiontaskparticipants)
 
     return HttpResponseRedirect('../..')
+
+
+
+def rotate_galaxy(request,competition,task,participant):
+    participant = CompetitionTaskParticipant.objects.get(pk=participant)
+    print "hola"
+    kml = create_rotation_kml(participant)
+    print "adeu"
+    print kml
+
+
 
 
 #Serializers

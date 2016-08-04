@@ -112,7 +112,7 @@ def create_routeparticipant_kml(positions,raceparticipant):
         kml_file.close()
         return filename
 
-def rotation_kml(taskparticipant):
+def create_rotation_kml(taskparticipant):
     positions = CompetitionTaskParticipantPosition.objects.all().filter(taskparticipant=taskparticipant)
     middlePosition = positions[len(positions)/2]
 

@@ -10,8 +10,8 @@ if __name__ == "__main__":
 
     from django.core.management import execute_from_command_line
 
-    #ip = sys.argv.pop(1)
-    #print ip
-    #write_ip(ip)
+    ip = sys.argv.pop(1)
+    print ip
+    write_ip(ip)
     execute_from_command_line(sys.argv)
 
