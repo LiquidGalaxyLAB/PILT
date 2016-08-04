@@ -3,30 +3,43 @@
 {% block content %}
 
     <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-        <li class="tab col s3"><a href="#test2">Test 2</a></li>
-      </ul>
-    </div>
-     <div id="test1" class="col s12">
-        <h1>{{competitiontaskparticipants.0.task.name}}</h1>
-
-               <div class="collection">
-                    {% for participant in competitiontaskparticipants %}
-                        <a href="{% url 'races:send_participant' participant.task.competition.pk participant.task.pk participant.pk %} " class="collection-item">{{ participant.name }}</a>
-                    {% endfor %}
-              </div>
-    </div>
-
-    <div id="test2" class="col s12">
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>First Names</h4></li>
-            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a><a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
           </ul>
-    </div>
+        </div>
+         <div id="test1" class="col s12">
+            <h1>{{competitiontaskparticipants.0.task.name}}</h1>
 
+                   <div class="collection">
+                        {% for participant in competitiontaskparticipants %}
+                            <a href="{% url 'races:send_participant' participant.task.competition.pk participant.task.pk participant.pk %} " class="collection-item">{{ participant.name }}</a>
+                        {% endfor %}
+                  </div>
+        </div>
+
+        <div id="test2" class="col s12">
+
+            <h1>{{competitiontaskparticipants.0.task.name}}</h1>
+
+            <ul class="collection with-header">
+                {% for participant in competitiontaskparticipants %}
+                    <li class="collection-item">
+                        <div>{{ participant.name }} - {{ participant.visibility }} -
+                            <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+                            <a href="#!" class="secondary-content"><i class="material-icons">autorenew</i></a>
+                            {% if participant.visibility %}
+                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:green">visibility</i></a>
+                            {% else %}
+                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:red">visibility</i></a>
+                            {% endif %}
+
+                        </div>
+                    </li>
+                {% endfor %}
+
+              </ul>
+        </div>
+</div>
 {% endblock %}

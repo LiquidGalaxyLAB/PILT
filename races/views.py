@@ -14,7 +14,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between,create_competitiontaskparticipant_kml
-from liquidgalaxy.lgCommunication import send_kml_to_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml
+from liquidgalaxy.lgCommunication import send_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml,create_kmlstxt
 from pilt.settings import BASE_DIR
 from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition,CompetitionTaskParticipant,CompetitionTaskParticipantPosition
 from .forms import RaceForm, AirRaceForm, CompetitionForm, TaskForm
@@ -404,16 +404,27 @@ def air_race_send(request,race, participant):
 def send_participant(request,competition,task,participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
+
     send_single_kml(participant)
 
     return HttpResponseRedirect('../..')
 
 
 def send_participants(request,competition,task,participant):
-    participants = CompetitionTaskParticipant.objects.filter(visibility=False)
+    participant = CompetitionTaskParticipant.objects.get(pk=participant)
 
+    if participant.visibility == True:
+        participant.visibility = False
+    else:
+        participant.visibility = True
+    participant.save()
 
+    competitiontaskparticipants = CompetitionTaskParticipant.objects.filter(task=task)
+    competitiontaskparticipants = competitiontaskparticipants.exclude(visibility=False)
 
+    create_kmlstxt(competitiontaskparticipants)
+
+    return HttpResponseRedirect('../..')
 
 
 #Serializers

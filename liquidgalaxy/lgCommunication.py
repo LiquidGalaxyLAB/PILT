@@ -39,7 +39,7 @@ def write_kml(kmlFolder,folder):
     for kmlFile in onlyfiles:
         file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/ibri/"+ folder +"/"+ kmlFile + "\n")
     file.close()
-    send_kml_to_galaxy()
+    send_galaxy()
 def write_kml_airrace(race):
     print(BASE_DIR)
     kmlFolder = BASE_DIR + "/static/airraces/" + race
@@ -56,7 +56,7 @@ def write_kml_airrace(race):
         print(kmlFile)
         file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/airraces/"+ race +"/"+ kmlFile + "\n")
     file.close()
-    send_kml_to_galaxy()
+    send_galaxy()
 def write_kml_participant(race,participant):
 
     print participant
@@ -70,7 +70,7 @@ def write_kml_participant(race,participant):
     file = open("kmls.txt", 'w')
     file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/"+ kmlFolder +"\n")
     file.close()
-    send_kml_to_galaxy()
+    send_galaxy()
 def write_kml_race():
     kmlFolder=BASE_DIR+"/static/kml/"
     ip_server = get_server_ip()
@@ -82,7 +82,7 @@ def write_kml_race():
     for kmlFile in onlyfiles:
         file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/kml/"+ kmlFile + "\n")
     file.close()
-    send_kml_to_galaxy()
+    send_galaxy()
 def write_idivt_kml():
     ip_server = get_server_ip()
     os.system("touch kmls.txt")
@@ -91,7 +91,8 @@ def write_idivt_kml():
     file = open("kmls.txt", 'w')
     file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/static/idivt/SOLSONA-CONGOST.kml"+ "\n")
     file.close()
-    send_kml_to_galaxy()
+    send_galaxy()
+
 def send_single_kml(participant):
     ip_server = get_server_ip()
     os.system("touch kmls.txt")
@@ -100,8 +101,23 @@ def send_single_kml(participant):
     file = open("kmls.txt", 'w')
     file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/"+ participant.kmlpath + "\n")
     file.close()
-    send_kml_to_galaxy()
-def send_kml_to_galaxy():
+    send_galaxy()
+
+
+def create_kmlstxt(participants):
+    ip_server = get_server_ip()
+    os.system("touch kmls.txt")
+    os.system("rm kmls.txt")
+    os.system("touch kmls.txt")
+    file = open("kmls.txt", 'w')
+    for participant in participants:
+        file.write(
+            "http://" + str(ip_server)[0:(len(ip_server) - 1)] + ":8000/" + participant.kmlpath + "\n")
+    file.close()
+
+    send_galaxy()
+
+def send_galaxy():
     file_path = "kmls.txt"
     server_path = "/var/www/html"
     print("sshpass -p 'lqgalaxy' scp " + file_path + " lg@" + get_ip() +":" + server_path)
