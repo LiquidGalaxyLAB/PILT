@@ -96,9 +96,9 @@ def create_tasks_participants(task):
     os.system("unzip %s -d %s" % (task.file, folderPath))
 
     print folderPath
-    space=" "
-    underbar="_"
-    folderPath= folderPath.replace(underbar,space)
+    #space=" "
+    #underbar="_"
+    #folderPath= folderPath.replace(underbar,space)
     print folderPath
     print"-----"
 
@@ -139,7 +139,8 @@ def create_competitiontaskparticipant(file, task):
     competitiontaskparticipant.task = task
     competitiontaskparticipant.save()
 
-    for line in arrayCoordinates:
+    for i in range(1,len(arrayCoordinates),100):
+        line=arrayCoordinates[i]
         timeStamp = line[1:7]
         latDMS = line[7:15]
         longDMS = line[15:24]

@@ -130,8 +130,8 @@ def send_kml_to_galaxy():
 
 def get_server_ip():
     p = subprocess.Popen(
-        #"ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
-        "ifconfig eno1 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        #"ifconfig eno1 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
         shell=True,
         stdout=subprocess.PIPE)
     ip_server = p.communicate()[0]
