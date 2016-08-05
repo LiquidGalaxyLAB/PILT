@@ -436,12 +436,10 @@ def send_participants(request,competition,task,participant):
 
 def rotate_galaxy(request,competition,task,participant):
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
-    print "hola"
     kml = create_rotation_kml(participant)
 
     send_single_kml(kml)
     start_tour()
-    print kml
     return HttpResponseRedirect('../..')
 
 

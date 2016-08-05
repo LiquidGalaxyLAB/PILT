@@ -25,14 +25,13 @@
 
             <ul class="collection with-header">
                 {% for participant in competitiontaskparticipants %}
-                    <li class="collection-item">
-                        <div>{{ participant.name }} - {{ participant.visibility }} -
-                            <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+                    <li class="collection-item" style="height:60px;">
+                        <div style="padding-top:10px;font-size:20px;">{{ participant.name }}
                             {% if participant.visibility %}
-                                <a href="{% url 'races:rotate_galaxy' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons">autorenew</i></a>
-                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:green">visibility</i></a>
+                                <a href="{% url 'races:rotate_galaxy' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="font-size:40px; margin-top:-10px;">autorenew</i></a>
+                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:green; font-size:40px; margin-top:-10px;">visibility</i></a>
                             {% else %}
-                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:red">visibility</i></a>
+                                <a href="{% url 'races:send_participants' participant.task.competition.pk participant.task.pk participant.pk %}" class="secondary-content"><i class="material-icons" style="color:red;font-size:40px; margin-top:-10px;">visibility</i></a>
                             {% endif %}
 
                         </div>
