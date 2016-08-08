@@ -6,8 +6,8 @@ The main objective of the PILT is display different use cases of the LG to the
 
 ###1. Install packages:
 ```
-apt-get install git python-pip sshpass
-sudo pip install virtualenvwrapper
+apt-get install git python-pip ssh sshpass
+pip install virtualenvwrapper
 ```
 
 
@@ -27,6 +27,13 @@ pip install -r requeriments.txt
 
 ###4. Run server
 ```
-python manage.py <server_ip> runserver 0.0.0.0:8000 --noreload
+python manage.py <lg_ip> runserver 0.0.0.0:8000 --noreload
 ```
+
+Or
+
+```
+./pilt-start <lg_ip>
+```
+
 
