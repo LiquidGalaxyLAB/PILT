@@ -101,7 +101,7 @@ def send_single_kml(kmlFile):
     file.write("http://" + str(ip_server)[0:(len(ip_server) - 1)] +":8000/"+ kmlFile + "\n")
     file.close()
     send_galaxy()
-
+    print "muahaha"
 
 def create_kmlstxt(participants):
     ip_server = get_server_ip()
@@ -137,6 +137,10 @@ def exit_tour():
 
 
 def comunicate(message):
+    print message
+    print get_galaxy_ip()
+    print ("sshpass -p 'lqgalaxy' ssh lg@{lg_ip} \"{message}\"".format(message=message, lg_ip=get_galaxy_ip()))
+
     os.system("sshpass -p 'lqgalaxy' ssh lg@{lg_ip} \"{message}\"".format(message=message, lg_ip=get_galaxy_ip()))
 
 
