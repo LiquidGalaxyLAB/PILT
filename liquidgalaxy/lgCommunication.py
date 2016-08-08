@@ -124,6 +124,9 @@ def send_galaxy():
     #os.system("sshpass -p 'lqgalaxy' scp -vvv kmls.txt lg@10.160.101.85:/var/www/html")
 
 
+def flyto(localization):
+    message = "echo 'flyto={localization}' > /tmp/query.txt".format(message=message)
+    comunicate(message)
 
 
 def start_tour():

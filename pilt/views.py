@@ -6,12 +6,13 @@ from os.path import isfile,join
 import os
 
 # Create your views here.
-from liquidgalaxy.lgCommunication import write_ip, write_kml, write_idivt_kml
+from liquidgalaxy.lgCommunication import write_ip, write_kml, write_idivt_kml,flyto
 from pilt.settings import BASE_DIR
 
 
 
 def idivt(request):
+    flyto("Solsona")
     write_idivt_kml()
     return render(request,'pilt/index.html', {})
 
