@@ -32,6 +32,7 @@ def ibriview(request):
 
 def ibri_send(request,folder):
     folderKML = BASE_DIR+'/static/ibri/'+folder
+    flyto("Las Palmas")
     write_kml(folderKML,folder)
     return HttpResponseRedirect(reverse('ibriview'),{})
 

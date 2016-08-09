@@ -10,12 +10,10 @@ apt-get install git python-pip ssh sshpass
 pip install virtualenvwrapper
 ```
 
-
 ###2. Get the latest git version and go inside:
 ```
 git clone https://github.com/LiquidGalaxyLAB/PILT
 ```
-
 
 ###3. Create environment and install dependencies:
 
