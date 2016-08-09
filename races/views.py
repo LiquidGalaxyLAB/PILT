@@ -14,7 +14,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between,create_competitiontaskparticipant_kml,create_rotation_kml
-from liquidgalaxy.lgCommunication import send_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml,create_kmlstxt, start_tour,exit_tour
+from liquidgalaxy.lgCommunication import send_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml,create_kmlstxt, start_tour,exit_tour,flyto
 from pilt.settings import BASE_DIR
 from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition,CompetitionTaskParticipant,CompetitionTaskParticipantPosition
 from .forms import RaceForm, AirRaceForm, CompetitionForm, TaskForm
@@ -406,6 +406,14 @@ def air_race_send(request,race, participant):
 def send_participant(request,competition,task,participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
+    print "1"
+
+    positions = CompetitionTaskParticipantPosition.objects.get(pk=participant.pk)
+
+    print positions.latitude
+    print (positions.latitude + "," + positions.longitude)
+    flyto(positions.latitude+"," + positions.longitude)
+
 
     send_single_kml(participant.kmlpath)
 
@@ -435,24 +443,17 @@ def send_participants(request,competition,task,participant):
 
 
 def rotate_galaxy(request,competition,task,participant):
-    print "fuuu"
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
-    print "daplays"
     kml = create_rotation_kml(participant)
-    print "motherfucker"
     send_single_kml(kml)
-    print"hola"
     start_tour()
-    print "adeu"
     return HttpResponseRedirect('../..')
 
 
 
 
 def exit_rotate_galaxy(request,competition,task,participant):
-
     exit_tour()
-
     return HttpResponseRedirect('../..')
 
 

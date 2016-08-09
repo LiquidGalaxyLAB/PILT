@@ -125,7 +125,7 @@ def send_galaxy():
 
 
 def flyto(localization):
-    message = "echo 'flyto={localization}' > /tmp/query.txt".format(message=message)
+    message = "echo 'flyto={localization}' > /tmp/query.txt".format(localization=localization)
     comunicate(message)
 
 
