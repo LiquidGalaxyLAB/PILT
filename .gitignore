@@ -2,6 +2,6 @@
 /static/idivt/imagenes/*
 /documents
 /static/kml/*
-db.sqlite3
 liquidgalaxy/ipsettings
 kmls.txt
+.DS_Store
