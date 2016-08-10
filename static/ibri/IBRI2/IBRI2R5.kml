@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_17">
+        <Style id="stylesel_4">
+            <LineStyle id="substyle_4">
+                <color>ff8b0000</color>
+                <colorMode>normal</colorMode>
+                <width>6</width>
+            </LineStyle>
+        </Style>
+        <name>IBRI2R5</name>
+        <Placemark id="feat_18">
+            <name>Base</name>
+            <Point id="geom_12">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="feat_19">
+            <name>Route 0</name>
+            <LookAt>
+                <longitude>28.4696692</longitude>
+                <latitude>-16.3698462</latitude>
+                <heading>0.063</heading>
+                <tilt>0</tilt>
+                <range>122</range>
+                <gx:altitudeMode>relativeToSeaFloor </gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#stylesel_4</styleUrl>
+            <LineString id="geom_13">
+                <coordinates>-16.3698462,28.4696692,40 -16.3709703,28.4696693,40 -16.3720944,28.4696694,40 -16.3732185,28.4696695,40 -16.3743426,28.4696696,40 -16.3754667,28.4696696,40 -16.3765908,28.4696697,40 -16.3777149,28.4686816,40 -16.378839,28.4686817,40 -16.3799631,28.4686817,40 -16.3810872,28.4686817,40 -16.3822113,28.4686817,40 -16.3822113,28.4676935,40 -16.3810872,28.4676935,40 -16.3799631,28.4676935,40 -16.378839,28.4676935,40 -16.3777149,28.4676934,40 -16.3765908,28.4686816,40 -16.3754667,28.4686815,40 -16.3743426,28.4686815,40 -16.3732185,28.4686814,40 -16.3720944,28.4686813,40 -16.3709703,28.4686812,40 -16.3698462,28.4686811,40 -16.3720944,28.4676931,40 -16.3732185,28.4676932,40 -16.3743426,28.4676933,40 -16.3754667,28.4676933,40 -16.3765908,28.4676934,40</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </LineString>
+        </Placemark>
+        <Placemark id="feat_20">
+            <name>Back to base</name>
+            <Point id="geom_14">
+                <coordinates>-16.3205404,28.4812865,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
