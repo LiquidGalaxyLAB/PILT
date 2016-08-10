@@ -14,7 +14,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from liquidgalaxy.kml_generator import create_participant_kml, create_routeparticipant_kml, find_between,create_competitiontaskparticipant_kml,create_rotation_kml
-from liquidgalaxy.lgCommunication import send_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml,create_kmlstxt, start_tour,exit_tour,flyto
+from liquidgalaxy.lgCommunication import send_galaxy,write_kml_race, write_kml_participant, write_kml_airrace,send_single_kml,create_kmlstxt, start_tour,exit_tour,flyto,lookat
 from pilt.settings import BASE_DIR
 from races.models import Race,RaceParticipant, Participant, Position, AirRace, AirRaceParticipant, Task,Competition,CompetitionTaskParticipant,CompetitionTaskParticipantPosition
 from .forms import RaceForm, AirRaceForm, CompetitionForm, TaskForm
@@ -412,7 +412,7 @@ def send_participant(request,competition,task,participant):
 
     print positions.latitude
     print (positions.latitude + "," + positions.longitude)
-    flyto(positions.latitude+"," + positions.longitude)
+    lookat(positions.latitude, positions.longitude)
 
 
     send_single_kml(participant.kmlpath)

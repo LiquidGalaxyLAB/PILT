@@ -129,6 +129,12 @@ def flyto(localization):
     comunicate(message)
 
 
+def lookat(latitude, longitude):
+    message = "echo 'flytoview=<LookAt><longitude>{longitude}</longitude><latitude>{latitude}</latitude><altitude>0</altitude><heading>150</heading><tilt>60</tilt><range>774.4323347622752</range><altitudeMode>relativeToGround</altitudeMode><gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode></LookAt>' > /tmp/query.txt".format(latitude=latitude, longitude=longitude)
+    comunicate(message)
+
+
+
 def start_tour():
     message = "echo 'playtour=participant' > /tmp/query.txt"
     comunicate(message)
