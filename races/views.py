@@ -431,10 +431,17 @@ def send_participants(request,competition,task,participant):
         participant.visibility = False
     else:
         participant.visibility = True
+        positions = CompetitionTaskParticipantPosition.objects.get(pk=participant.pk)
+
+        print positions.latitude
+        print positions.longitude
+        lookat(positions.latitude, positions.longitude)
     participant.save()
 
     competitiontaskparticipants = CompetitionTaskParticipant.objects.filter(task=task)
     competitiontaskparticipants = competitiontaskparticipants.exclude(visibility=False)
+
+
 
     create_kmlstxt(competitiontaskparticipants)
 

@@ -1,7 +1,6 @@
 *.pyc
 /static/idivt/imagenes/*
 /documents
-/static/kml/*
 liquidgalaxy/ipsettings
 kmls.txt
 .DS_Store

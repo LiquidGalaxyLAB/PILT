@@ -45,7 +45,7 @@ def create_competitiontaskparticipant_kml(taskparticipant):
             "\t\t\t<styleUrl>#colorLine</styleUrl>\n" +
             "\t\t\t<LineString>\n" +
             "\t\t\t\t<tessellate>1</tessellate>\n" +
-            "\t\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n" +
+            "\t\t\t\t<altitudeMode>absolute</altitudeMode>\n" +
             "\t\t\t\t<coordinates>\n")
         for position in positions:
             kml_file.write(
@@ -147,7 +147,7 @@ def create_rotation_kml(taskparticipant):
                             "\t\t\t\t\t<altitude>0</altitude>\n" +
                             "\t\t\t\t\t<heading>"+str(grades)+"</heading>\n" +
                             "\t\t\t\t\t<range>15000</range>\n" +
-                            "\t\t\t\t\t<tilt>55</tilt>\n" +
+                            "\t\t\t\t\t<tilt>15</tilt>\n" +
                             "\t\t\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n" +
                             "\t\t\t\t</LookAt>\n" +
                             "\t\t</gx:FlyTo>\n"
