@@ -146,8 +146,8 @@ def create_rotation_kml(taskparticipant):
                             "\t\t\t\t\t<latitude>"+ str(middlePosition.latitude) +"</latitude>\n" +
                             "\t\t\t\t\t<altitude>0</altitude>\n" +
                             "\t\t\t\t\t<heading>"+str(grades)+"</heading>\n" +
-                            "\t\t\t\t\t<range>15000</range>\n" +
-                            "\t\t\t\t\t<tilt>15</tilt>\n" +
+                            "\t\t\t\t\t<range>6000</range>\n" +
+                            "\t\t\t\t\t<tilt>80</tilt>\n" +
                             "\t\t\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n" +
                             "\t\t\t\t</LookAt>\n" +
                             "\t\t</gx:FlyTo>\n"

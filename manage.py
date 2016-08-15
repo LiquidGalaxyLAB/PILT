@@ -13,5 +13,6 @@ if __name__ == "__main__":
     ip = sys.argv.pop(1)
     print ip
     write_ip(ip)
+
     execute_from_command_line(sys.argv)
 

@@ -62,7 +62,7 @@ class Race(models.Model):
     ]
 
     type=models.IntegerField(choices=Race_Type,default=0)
-    image=models.CharField(max_length=100)
+    image=models.CharField(max_length=300)
     localization_name = models.CharField(max_length=200)
     latitude = models.CharField(max_length=100)
     longitude = models.CharField(max_length=100)

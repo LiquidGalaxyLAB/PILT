@@ -1,28 +1,10 @@
- {% extends 'base.html' %}
+{% extends 'base.html' %}
 
 
-{% block tabs %}
 
-<div class="row" style="width:100%;">
-    <div class="col s12" style="padding:0;">
-      <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-      </ul>
-    </div>
-
-{% endblock %}
 {% block content %}
-
-
-<div class="row">
- <div id="test1" class="col s12">
-        <h1>{{ race.pk }}</h1>
-
-     </div>
-
-    <div id="test2" class="col s12">
-
+    <div class="row">
+        <!--
         <ul class="collection">
             {% for participant in participants %}
                 <li class="collection-item avatar">
@@ -34,42 +16,31 @@
                 </li>
             {% endfor %}
         </ul>
-        {{ race.name }}
-        <p>hola</p>
-        {{ race.localization_name }}
-        {{ race.latitude }}
-
-
+        -->
+        <h1>{{ race.name }}</h1>
+        <h2>{{ race.localization_name }}</h2>
         <ul class="collection">
-    <li class="collection-item avatar">
-      <img src="http://i198.photobucket.com/albums/aa62/Axellover120/pikachu_wallpaper.jpg" alt="" class="circle">
-      <span class="title">Participant - PIKACHU</span>
-      <p>First Line <br>
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="http://orig01.deviantart.net/c9e0/f/2011/093/d/1/charmander_evo_wallpaper_by_capt2001-d3d4alb.jpg" alt="" class="circle">
-      <span class="title">Participant - CHARMANDER</span>
-      <p>First Line <br>
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="https://img1.etsystatic.com/065/0/10845602/il_570xN.785921817_rdck.jpg" alt="" class="circle">
-      <span class="title">Participant - SQUIRTLE</span>
-      <p>First Line <br>
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="http://i16.photobucket.com/albums/b13/InSenG/Bulbasaur.png" alt="" class="circle">
-      <span class="title">Participant - BULBASAUR</span>
-      <p>First Line <br>
-      </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-  </ul>
+            <li class="collection-item avatar">
+              <img src="http://i198.photobucket.com/albums/aa62/Axellover120/pikachu_wallpaper.jpg" alt="" class="circle">
+              <span class="title">Participant - PIKACHU</span>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="http://orig01.deviantart.net/c9e0/f/2011/093/d/1/charmander_evo_wallpaper_by_capt2001-d3d4alb.jpg" alt="" class="circle">
+              <span class="title">Participant - CHARMANDER</span>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="https://img1.etsystatic.com/065/0/10845602/il_570xN.785921817_rdck.jpg" alt="" class="circle">
+              <span class="title">Participant - SQUIRTLE</span>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="http://i16.photobucket.com/albums/b13/InSenG/Bulbasaur.png" alt="" class="circle">
+              <span class="title">Participant - BULBASAUR</span>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+        </ul>
 
 
 
@@ -87,7 +58,6 @@
     </div>
 
 
-</div>
 
 
 

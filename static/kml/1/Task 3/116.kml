@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Style id="colorLine">
+			<LineStyle>
+				<color>ff8E4433</color>
+				<width>20</width>
+			</LineStyle>
+		</Style>
+		<LookAt>
+			<longitude>-5.30173333333</longitude>
+			<latitude>40.4213333333</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>30</tilt>
+			<range>3000</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<Placemark>
+			<styleUrl>#colorLine</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>
+				-5.30173333333,40.4213333333,01906
+				-5.29078333333,40.4359166667,02014
+				-5.28676666667,40.4330833333,01963
+				-5.29221666667,40.4296333333,01989
+				-5.29473333333,40.4284333333,02029
+				-5.2958,40.4303833333,02143
+				-5.29481666667,40.43455,02087
+				-5.3058,40.45565,01819
+				-5.31295,40.47295,01537
+				-5.30626666667,40.4736,01958
+				-5.28733333333,40.4900166667,01717
+				-5.27445,40.5128666667,01420
+				-5.2608,40.5178333333,01614
+				-5.24105,40.521,02113
+				-5.2183,40.53165,02233
+				-5.1708,40.56065,01761
+				-5.15955,40.5679,01538
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Document>
+</kml>

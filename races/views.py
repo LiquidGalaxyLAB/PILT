@@ -254,7 +254,7 @@ def new_race(request):
         if form.is_valid():
             race = form.save(commit=False)
             race.save()
-            return redirect('races:detail_race', pk=race.pk)
+            return redirect('races:ground_detail_race', pk=race.pk)
     return render(request, 'races/new_race.html', {'form': form})
 
 def get_all_raceparticipants(race):
@@ -317,12 +317,10 @@ def create_participant(request):
     #name=request.GET.get('name','')
 
     if request.method == 'POST':
-        print("fhgjhk")
         name=request.POST.get('name','')
         image=request.POST.get('image','')
         imageFACE=request.POST.get('oe','')
         imageURL=str(image)+'&oe='+str(imageFACE)
-        print(imageURL)
         pk=request.POST.get('race','')
         race = Race.objects.get(pk=pk)
 
@@ -337,7 +335,6 @@ def create_participant(request):
         participant.save()
         create_raceparticipant(participant,race)
         raceParticipant= RaceParticipant.objects.get(participant=participant.pk,race=race.pk)
-        print(raceParticipant.pk)
         get_raceparticipant(participant, race)
     return HttpResponseRedirect('/')
 def create_raceparticipant(participant,race):
@@ -354,25 +351,20 @@ def create_raceposition(request):
     if request.method == 'POST':
         raceID = request.POST.get('race', '')
         race = Race.objects.get(pk=raceID)
-        print("it works!!!!")
 
         nameID=request.POST.get('name','')
         user=User.objects.get(username=nameID)
         print(user.username)
-        print("aaaaa")
+
         participant = Participant.objects.get(user=user)
         print(participant.user.username)
-        print(participant.pk)
-        print("it works!!!!")
+
 
         raceparticipant = get_raceparticipant(participant, race)
         print(raceparticipant.race)
 
         position = Position()
         position.instant = request.POST.get('instant', '')
-        print(position.instant)
-        print("it works!!!!")
-
         position.latitude = request.POST.get('latitude','')
         position.longitude = request.POST.get('longitude','')
         position.height = request.POST.get('height', '')
@@ -387,10 +379,6 @@ def get_racepositions(raceparticipant):
 def ground_race_send(request,race, participant):
     raceparticipant = get_raceparticipant(participant,race)
     positions = get_racepositions(raceparticipant)
-    print(raceparticipant.participant.user.username)
-    print race
-    print race.pk
-    print "-----"
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     write_kml_race()
     return HttpResponseRedirect('/ground_races')
@@ -406,8 +394,6 @@ def air_race_send(request,race, participant):
 def send_participant(request,competition,task,participant):
     #filename=create_routeparticipant_kml(positions,raceparticipant)
     participant = CompetitionTaskParticipant.objects.get(pk=participant)
-    print "1"
-
     positions = CompetitionTaskParticipantPosition.objects.get(pk=participant.pk)
 
     print positions.latitude
@@ -433,8 +419,7 @@ def send_participants(request,competition,task,participant):
         participant.visibility = True
         positions = CompetitionTaskParticipantPosition.objects.get(pk=participant.pk)
 
-        print positions.latitude
-        print positions.longitude
+
         lookat(positions.latitude, positions.longitude)
     participant.save()
 
