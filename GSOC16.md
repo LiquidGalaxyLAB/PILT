@@ -1,3 +1,8 @@
+##Google Summer of Code 2016
+#### Project - Panoramic Interactive Live Tracker
+#### Student - Marc Gonzalez Capdevila
+####Developed under GSoC 2016 organization Liquid Galaxy Project
+
 PILT project wants to create a standard to display static and dynamic information over the LG system. We are going to build a system that creates different layers of information in order to display useful representations in the system.
 
 The goal will be create a server that handles synchronous and asynchronous information and translates it into KML, moreover we will represent different uses cases like adding integrations with other Liquid Galaxy projects that has to send KML into the system.
