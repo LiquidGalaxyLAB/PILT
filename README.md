@@ -1,5 +1,7 @@
 # PILT (Panoramic Interactive Live Tracker)
-The main objective of the PILT is display different use cases of the LG to the
+PILT project want to create an standard to display static and dynamic information over the LG system. We are going to build a system that creates different layers in order to display useful information in the system.
+
+The goal will be create a server that receives online or offline information and translate it into KML, moreover we will represent different uses cases like adding integrations with other Liquid Galaxy projects that has to send KML into the system.
 
 
 ## How to install
